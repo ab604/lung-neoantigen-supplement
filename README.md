@@ -4,11 +4,11 @@
 
 Supplementary Material 1 is Table S1, a `csv` file containing patient information with 24 rows and 21 column variables. Each row in Table S1 represents observations for a single patient.
 
-`Table-S1` provides descriptions of the values contained in each column of Table S1.
+This table provides descriptions of the values contained in each column of Table S1.
 
 +---------------------------+--------------------------------------------------------------------------------------+
 | Column name               | Description                                                                          |
-+===========================+======================================================================================+
++---------------------------+--------------------------------------------------------------------------------------+
 | `accel_id`                | CRUK Accelerator patient identifier                                                  |
 +---------------------------+--------------------------------------------------------------------------------------+
 | `target_lung_id`          | Targeted Lung Health Check patient identifier                                        |
@@ -45,11 +45,11 @@ Supplementary Material 1 is Table S1, a `csv` file containing patient informatio
 | `notes_2`                 | Notes about smoking history                                                          |
 +---------------------------+--------------------------------------------------------------------------------------+
 
-: Patient information Table S1 variables {#tbl-supp-01}
+: Patient information Table S1 variables
 
 ## Supplementary Material 2 and 3: pVACseq predicted neoantigens
 
-Supplementary Material 2 and 3 are Tables S2 and S3. These are `csv` files containing all the pVACseq predicted neoantigen peptides and their wildtype equivalents, @tbl-supp-02-03 contains descriptions of the values contained in each column. Each row in Tables S2 and S3 represents one set of predictions i.e. one mutation and predicted neoantigen peptide per row.
+Supplementary Material 2 and 3 are Tables S2 and S3. These are `csv` files containing all the pVACseq predicted neoantigen peptides and their wildtype equivalents, the tables here provide descriptions of the values contained in each column. Each row in Tables S2 and S3 represents one set of predictions i.e. one mutation and predicted neoantigen peptide per row.
 
 Table S2 has 27,446 rows and 59 columns. Table S3 has 127,015 rows and 59 columns.
 
@@ -169,11 +169,11 @@ Table S2 has 27,446 rows and 59 columns. Table S3 has 127,015 rows and 59 column
 | `rank_percent`                                                | The percentage rank score. Lower is better.                                                                                                                                                                                   |
 +---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-: pVACseq predictions Tables S2 and S3 variables {#tbl-supp-02-03}
+: pVACseq predictions Tables S2 and S3 variables
 
 ## Supplementary Material 4: Tested neoantigens
 
-Supplementary Material 4 is Table S4, a `csv` file with 70 rows and 17 column variables for the neoantigen peptide predictions tested by IFN-𝛄 ELISPOT. Each row in Table S4 represents one neoantigen peptide and its wildtype equivalent and @tbl-supp-04 contains descriptions of the values contained in each column of Table S4.
+Supplementary Material 4 is Table S4, a `csv` file with 70 rows and 17 column variables for the neoantigen peptide predictions tested by IFN-𝛄 ELISPOT. Each row in Table S4 represents one neoantigen peptide and its wildtype equivalent and the table below contains descriptions of the values contained in each column of Table S4.
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
