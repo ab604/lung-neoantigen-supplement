@@ -98,7 +98,7 @@ Moderate, High or NA</td>
 </tbody>
 </table>
 
-Patient information Table S1 variables
+
 
 ## Supplementary Material 2 and 3: pVACseq predicted neoantigens
 
@@ -114,7 +114,7 @@ Table S2 has 27,446 rows and 59 columns. Table S3 has 127,015 rows and
 
 <table>
 <caption>pVACseq predictions Tables S2 and S3 variables
-{#tbl-supp-02-03}</caption>
+</caption>
 <colgroup>
 <col style="width: 22%" />
 <col style="width: 77%" />
@@ -408,20 +408,17 @@ splitting ties by first. Lower is better</td>
 </tbody>
 </table>
 
-pVACseq predictions Tables S2 and S3 variables {#tbl-supp-02-03}
 
 ## Supplementary Material 4: Tested neoantigens
 
 Supplementary Material 4 is Table S4, a `csv` file with 70 rows and 17
 column variables for the neoantigen peptide predictions tested by IFN-𝛄
 ELISPOT. Each row in Table S4 represents one neoantigen peptide and its
-wildtype equivalent and @tbl-supp-04 contains descriptions of the values
+wildtype equivalent and the table below contains descriptions of the values
 contained in each column of Table S4.
 
-\`\`\`{r} \#\| eval: false sm4 \<- tibble(names = tab_neo \|\>
-select(1:14,15,16,19) \|\> colnames(), description = ““)
 
-sm4 \|\> write_csv(“nsclc-tested-neoantigens-2024-05-11.csv”) \`\`\`
+Tested candidate neoantigen peptides Table S4 variables
 
 |  |  |
 |----|----|
@@ -444,7 +441,6 @@ sm4 \|\> write_csv(“nsclc-tested-neoantigens-2024-05-11.csv”) \`\`\`
 | `mean_sfc_wt` | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the wildtype peptide |
 | `elispot_response` | ELISPOT response category: Strong, Weak or None |
 
-Tested candidate neoantigen peptides Table S4 variables
 
 ### Table S5 List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
 
