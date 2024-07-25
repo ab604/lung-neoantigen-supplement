@@ -5,8 +5,8 @@ Last Updated on 2024-07-25
 
 This repository contains the supplementary tables as `csv` files for:
 **Proteogenomics guided identification of functional neoantigens in
-non-small cell lung cancer**. This repository is associated with Zenodo
-object:
+non-small cell lung cancer** \[[1](#ref-nicholas2024)\]. This repository
+is associated with Zenodo object:
 [10.5281/zenodo.12820423](https://zenodo.org/doi/10.5281/zenodo.12820423).
 
 The column names and contents of the `csv` files in the `tables` folder
@@ -120,7 +120,7 @@ Moderate, High or NA</td>
 ## Supplementary Material 2 and 3: pVACseq predicted neoantigens
 
 Supplementary Material 2 and 3 are Tables S2 and S3. These are `csv`
-files containing all the pVACseq \[[1](#ref-hundal2016)\] predicted
+files containing all the pVACseq \[[2](#ref-hundal2016)\] predicted
 neoantigen peptides and their wildtype equivalents,
 <a href="#tbl-supp-02-03" class="quarto-xref">Table 2</a> contains
 descriptions of the values contained in each column. Each row in Tables
@@ -465,6 +465,12 @@ descriptions of the values contained in each column of Table S4.
 ## References
 
 <span class="csl-left-margin">1.
+</span><span class="csl-right-inline">Nicholas B, Bailey A, McCann KJ,
+Wood O, Currall E, Johnson P, et al. Proteogenomics guided
+identification of functional neoantigens in non-small cell lung cancer.
+2024. Available: <http://dx.doi.org/10.1101/2024.05.30.596609></span>
+
+<span class="csl-left-margin">2.
 </span><span class="csl-right-inline">Hundal J, Carreno BM, Petti AA,
 Linette GP, Griffith OL, Mardis ER, et al. pVAC-seq: A genome-guided in
 silico approach to identifying tumor neoantigens. Genome Medicine.
