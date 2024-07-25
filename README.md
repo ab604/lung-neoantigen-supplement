@@ -51,7 +51,7 @@ The table below provides descriptions of the values contained in each column of 
 
 : Patient information Table S1 variables
 
-Patient information Table S1 variables
+
 
 ## Supplementary Material 2 and 3: pVACseq predicted neoantigens
 
@@ -59,6 +59,7 @@ Supplementary Material 2 and 3 are Tables S2 and S3. These are `csv` files conta
 
 Table S2 has 27,446 rows and 59 columns. Table S3 has 127,015 rows and 59 columns.
 
+<<<<<<< HEAD
 +---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Column Name                                                   | Description                                                                                                                                                                                                                   |
 +===============================================================+===============================================================================================================================================================================================================================+
@@ -176,16 +177,323 @@ Table S2 has 27,446 rows and 59 columns. Table S3 has 127,015 rows and 59 column
 +---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : pVACseq predictions Tables S2 and S3 variables {#tbl-supp-02-03}
+=======
+<table>
+<caption>pVACseq predictions Tables S2 and S3 variables
+</caption>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>sample</code></td>
+<td>CRUK Accelerator patient identifier</td>
+</tr>
+<tr class="even">
+<td><code>Chromosome</code></td>
+<td>The chromosome of this variant</td>
+</tr>
+<tr class="odd">
+<td><code>Start</code></td>
+<td>The start position of this variant in the zero-based, half-open
+coordinate system</td>
+</tr>
+<tr class="even">
+<td><code>Stop</code></td>
+<td>The stop position of this variant in the zero-based, half-open
+coordinate system</td>
+</tr>
+<tr class="odd">
+<td><code>Reference</code></td>
+<td>The reference allele</td>
+</tr>
+<tr class="even">
+<td><code>Variant</code></td>
+<td>The alt allele</td>
+</tr>
+<tr class="odd">
+<td><code>Transcript</code></td>
+<td>The Ensembl ID of the affected transcript</td>
+</tr>
+<tr class="even">
+<td><code>Transcript Support Level</code></td>
+<td>The <a
+href="https://useast.ensembl.org/info/genome/genebuild/transcript_quality_tags.html#tsl">transcript
+support level (TSL)</a> of the affected transcript. <code>NA</code> if
+the VCF entry doesn’t contain TSL information.</td>
+</tr>
+<tr class="odd">
+<td><code>Ensembl Gene ID</code></td>
+<td>The Ensembl ID of the affected gene</td>
+</tr>
+<tr class="even">
+<td><code>Variant Type</code></td>
+<td>The type of variant. <code>missense</code> for missense mutations,
+<code>inframe_ins</code> for inframe insertions,
+<code>inframe_del</code> for inframe deletions, and <code>FS</code> for
+frameshift variants</td>
+</tr>
+<tr class="odd">
+<td><code>Mutation</code></td>
+<td>The amnio acid change of this mutation</td>
+</tr>
+<tr class="even">
+<td><code>Protein Position</code></td>
+<td>The protein position of the mutation</td>
+</tr>
+<tr class="odd">
+<td><code>Gene Name</code></td>
+<td>The Ensembl gene name of the affected gene</td>
+</tr>
+<tr class="even">
+<td><code>HGVSc</code></td>
+<td>The HGVS coding sequence variant name</td>
+</tr>
+<tr class="odd">
+<td><code>HGVSp</code></td>
+<td>The HGVS protein sequence variant name</td>
+</tr>
+<tr class="even">
+<td><code>HLA Allele</code></td>
+<td>The HLA allele for this prediction</td>
+</tr>
+<tr class="odd">
+<td><code>Peptide Length</code></td>
+<td>The peptide length of the epitope</td>
+</tr>
+<tr class="even">
+<td><code>Sub-peptide Position</code></td>
+<td>The one-based position of the epitope within the protein sequence
+used to make the prediction</td>
+</tr>
+<tr class="odd">
+<td><code>Mutation Position</code></td>
+<td>The one-based position of the start of the mutation within the
+epitope sequence. <code>0</code> if the start of the mutation is before
+the epitope</td>
+</tr>
+<tr class="even">
+<td><code>MT Epitope Seq</code></td>
+<td>The mutant epitope sequence</td>
+</tr>
+<tr class="odd">
+<td><code>WT Epitope Seq</code></td>
+<td>The wildtype (reference) epitope sequence at the same position in
+the full protein sequence. <code>NA</code> if there is no wildtype
+sequence at this position or if more than half of the amino acids of the
+mutant epitope are mutated</td>
+</tr>
+<tr class="even">
+<td><code>Best MT Score Method</code></td>
+<td>Prediction algorithm with the lowest mutant ic50 binding affinity
+for this epitope</td>
+</tr>
+<tr class="odd">
+<td><code>Best MT Score</code></td>
+<td>Lowest ic50 binding affinity of all prediction algorithms used</td>
+</tr>
+<tr class="even">
+<td><code>Corresponding WT Score</code></td>
+<td>ic50 binding affinity of the wildtype epitope. <code>NA</code> if
+there is no <code>WT Epitope Seq</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>Corresponding Fold Change</code></td>
+<td><code>Corresponding WT Score</code> / <code>Best MT Score</code>.
+<code>NA</code> if there is no <code>WT Epitope Seq</code>.</td>
+</tr>
+<tr class="even">
+<td><code>Best MT Percentile Method</code></td>
+<td>Prediction algorithm with the lowest binding affinity percentile
+rank for this epitope</td>
+</tr>
+<tr class="odd">
+<td><code>Best MT Percentile</code></td>
+<td>Lowest percentile rank of this epitope’s ic50 binding affinity of
+all prediction algorithms used (those that provide percentile
+output)</td>
+</tr>
+<tr class="even">
+<td><code>Corresponding WT Percentile</code></td>
+<td>binding affinity percentile rank of the wildtype epitope.
+<code>NA</code> if there is no <code>WT Epitope Seq</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>Tumor DNA Depth</code></td>
+<td>Tumor DNA depth at this position. <code>NA</code> if VCF entry does
+not contain tumor DNA readcount annotation.</td>
+</tr>
+<tr class="even">
+<td><code>Tumor DNA VAF</code></td>
+<td>Tumor DNA variant allele frequency (VAF) at this position.
+<code>NA</code> if VCF entry does not contain tumor DNA readcount
+annotation.</td>
+</tr>
+<tr class="odd">
+<td><code>Tumor RNA Depth</code></td>
+<td>Tumor RNA depth at this position. <code>NA</code> if VCF entry does
+not contain tumor RNA readcount annotation.</td>
+</tr>
+<tr class="even">
+<td><code>Tumor RNA VAF</code></td>
+<td>Tumor RNA variant allele frequency (VAF) at this position.
+<code>NA</code> if VCF entry does not contain tumor RNA readcount
+annotation.</td>
+</tr>
+<tr class="odd">
+<td><code>Normal Depth</code></td>
+<td>Normal DNA depth at this position. <code>NA</code> if VCF entry does
+not contain normal DNA readcount annotation.</td>
+</tr>
+<tr class="even">
+<td><code>Normal VAF</code></td>
+<td>Normal DNA variant allele frequency (VAF) at this position.
+<code>NA</code> if VCF entry does not contain normal DNA readcount
+annotation.</td>
+</tr>
+<tr class="odd">
+<td><code>Gene Expression</code></td>
+<td>Gene expression value for the annotated gene containing the variant.
+<code>NA</code> if VCF entry does not contain gene expression
+annotation.</td>
+</tr>
+<tr class="even">
+<td><code>Transcript Expression</code></td>
+<td>Transcript expression value for the annotated transcript containing
+the variant. <code>NA</code> if VCF entry does not contain transcript
+expression annotation.</td>
+</tr>
+<tr class="odd">
+<td><code>Median MT Score</code></td>
+<td>Median ic50 binding affinity of the mutant epitope across all
+prediction algorithms used</td>
+</tr>
+<tr class="even">
+<td><code>Median WT Score</code></td>
+<td>Median ic50 binding affinity of the wildtype epitope across all
+prediction algorithms used. <code>NA</code> if there is no
+<code>WT Epitope Seq</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>Median Fold Change</code></td>
+<td><code>Median WT Score</code> / <code>Median MT Score</code>.
+<code>NA</code> if there is no <code>WT Epitope Seq</code>.</td>
+</tr>
+<tr class="even">
+<td><code>Individual Prediction Algorithm WT and MT Scores</code>
+(multiple)</td>
+<td><p>ic50 binding affintity for the <code>MT Epitope Seq</code> and
+<code>WT Eptiope Seq</code> for the individual prediction algorithms
+used.</p>
+<p>Four binding algorithms were used for class I predictions (MHCflurry,
+MHCnuggetsI, NNalign, NetMHC, PickPocket) and four for class II
+predictions (MHCnuggetsII, NetMHCIIpan, NNalign, SMMalign).</p></td>
+</tr>
+<tr class="odd">
+<td><code>cterm_7mer_gravy_score</code></td>
+<td>Mean hydropathy of last 7 residues on the C-terminus of the
+peptide</td>
+</tr>
+<tr class="even">
+<td><code>max_7mer_gravy_score</code></td>
+<td>Max GRAVY score of any kmer in the amino acid sequence. Used to
+determine if there are any extremely hydrophobic regions within a longer
+amino acid sequence.</td>
+</tr>
+<tr class="odd">
+<td><code>difficult_n_terminal_residue</code> (T/F)</td>
+<td>Is N-terminal amino acid a Glutamine, Glutamic acid, or
+Cysteine?</td>
+</tr>
+<tr class="even">
+<td><code>c_terminal_cysteine</code> (T/F)</td>
+<td>Is the C-terminal amino acid a Cysteine?</td>
+</tr>
+<tr class="odd">
+<td><code>c_terminal_proline</code> (T/F)</td>
+<td>Is the C-terminal amino acid a Proline?</td>
+</tr>
+<tr class="even">
+<td><code>cysteine_count</code></td>
+<td>Number of Cysteines in the amino acid sequence. Problematic because
+they can form disulfide bonds across distant parts of the peptide</td>
+</tr>
+<tr class="odd">
+<td><code>n_terminal_asparagine</code> (T/F)</td>
+<td>Is the N-terminal amino acid an Asparagine?</td>
+</tr>
+<tr class="even">
+<td><code>asparagine_proline_bond_count</code></td>
+<td>Number of Asparagine-Proline bonds. Problematic because they can
+spontaneously cleave the peptide</td>
+</tr>
+<tr class="odd">
+<td><code>b_rank</code></td>
+<td>Rank of binding score: 1/median neoantigen binding affinity . Lower
+is better</td>
+</tr>
+<tr class="even">
+<td><code>f_rank</code></td>
+<td>Rank of fold change: the difference in median binding affinity
+between neoantigen and wildtype peptide (agretopicity). Higher is
+better.</td>
+</tr>
+<tr class="odd">
+<td><code>m_rank</code></td>
+<td>Ranks of mutant allele expression: the product of
+<code>gene_expression</code> and <code>tumor_rna_vaf</code> . Higher is
+better.</td>
+</tr>
+<tr class="even">
+<td><code>d_rank</code></td>
+<td>Rank of the <code>tumor_dna_vaf</code> . Higher is better.</td>
+</tr>
+<tr class="odd">
+<td><code>score</code></td>
+<td>A <code>score</code> is calculated from the above ranks with the
+following formula:
+<code>b_rank + f_rank + (m_rank * 2) + (d_rank/2)</code> . Higher is
+better</td>
+</tr>
+<tr class="even">
+<td><code>rank_score</code></td>
+<td>The <code>score</code> converted to a rank, with the best being 1,
+splitting ties by first. Lower is better</td>
+</tr>
+<tr class="odd">
+<td><code>rank_percent</code></td>
+<td>The percentage rank score. Lower is better.</td>
+</tr>
+</tbody>
+</table>
+>>>>>>> 89baf343b57f8ae47d12f80b1659449223afebd8
 
-pVACseq predictions Tables S2 and S3 variables {#tbl-supp-02-03}
 
 ## Supplementary Material 4: Tested neoantigens
 
+<<<<<<< HEAD
 Supplementary Material 4 is Table S4, a `csv` file with 70 rows and 17 column variables for the neoantigen peptide predictions tested by IFN-𝛄 ELISPOT. Each row in Table S4 represents one neoantigen peptide and its wildtype equivalent and @tbl-supp-04 contains descriptions of the values contained in each column of Table S4.
 
 \`\`\`{r} #\| eval: false sm4 \<- tibble(names = tab_neo \|\> select(1:14,15,16,19) \|\> colnames(), description = "")
 
 sm4 \|\> write_csv("nsclc-tested-neoantigens-2024-05-11.csv") \`\`\`
+=======
+Supplementary Material 4 is Table S4, a `csv` file with 70 rows and 17
+column variables for the neoantigen peptide predictions tested by IFN-𝛄
+ELISPOT. Each row in Table S4 represents one neoantigen peptide and its
+wildtype equivalent and the table below contains descriptions of the values
+contained in each column of Table S4.
+
+
+Tested candidate neoantigen peptides Table S4 variables
+>>>>>>> 89baf343b57f8ae47d12f80b1659449223afebd8
 
 +----------------------------------+-----------------------------------------------------------------------------------------------------------------+
 | **Column name**                  | **Description**                                                                                                 |
@@ -225,7 +533,6 @@ sm4 \|\> write_csv("nsclc-tested-neoantigens-2024-05-11.csv") \`\`\`
 | `elispot_response`               | ELISPOT response category: Strong, Weak or None                                                                 |
 +----------------------------------+-----------------------------------------------------------------------------------------------------------------+
 
-Tested candidate neoantigen peptides Table S4 variables
 
 ### Table S5 List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
 
