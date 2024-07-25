@@ -1,458 +1,236 @@
 # Supplementary Information for Proteogenomics guided identification of functional neoantigens in non-small cell lung cancer
 
+This repository is associated with Zenodo object [10.5281/zenodo.12820423](https://zenodo.org/doi/10.5281/zenodo.12820423).
+
 ## Supplementary Material 1: Patient information
 
-Supplementary Material 1 is Table S1, a `csv` file containing patient
-information with 24 rows and 21 column variables. Each row in Table S1
-represents observations for a single patient.
+Supplementary Material 1 is Table S1, a `csv` file containing patient information with 24 rows and 21 column variables. Each row in Table S1 represents observations for a single patient.
 
-The table below provides descriptions of the values contained in each
-column of Table S1.
+The table below provides descriptions of the values contained in each column of Table S1.
 
-<table>
-<caption>Patient information Table S1 variables</caption>
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 75%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Column name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>accel_id</code></td>
-<td>CRUK Accelerator patient identifier</td>
-</tr>
-<tr class="even">
-<td><code>target_lung_id</code></td>
-<td>Targeted Lung Health Check patient identifier</td>
-</tr>
-<tr class="odd">
-<td><code>tissue</code></td>
-<td>NSCLC type: Adenocarcinoma or Squamous cell carcinoma</td>
-</tr>
-<tr class="even">
-<td><code>n_somatic_variants</code></td>
-<td>Total number of somatic variants identified by whole exome
-sequencing</td>
-</tr>
-<tr class="odd">
-<td><code>mut_burden_per_mb</code></td>
-<td>Mutational burden: mutations per million bases of DNA.<br />
-Exome target size was 35.7 Mb</td>
-</tr>
-<tr class="even">
-<td><code>obs_class_I</code></td>
-<td>Number of observed HLA I peptides by mass spec.
-immunopeptidomics</td>
-</tr>
-<tr class="odd">
-<td><code>obs_class_II</code></td>
-<td>Number of observed HLA II peptides by mass spec.
-immunopeptidomics</td>
-</tr>
-<tr class="even">
-<td><code>HLA</code></td>
-<td>Class I and II HLA allotypes identified by genomic sequencing</td>
-</tr>
-<tr class="odd">
-<td><code>wet_weight</code></td>
-<td>Wet weight of tumour tissue</td>
-</tr>
-<tr class="even">
-<td><code>tumour_purity</code></td>
-<td>Tumour purity as calculated from WES by ASCAT</td>
-</tr>
-<tr class="odd">
-<td><code>tumour_ploidy</code></td>
-<td>Tumour ploidy as calculated from WES by ASCAT</td>
-</tr>
-<tr class="even">
-<td><code>til_status</code></td>
-<td>Tumour infiltrating T-cell status by immunohistochemistry: Low,
-Moderate, High or NA</td>
-</tr>
-<tr class="odd">
-<td><code>weeks_post_surgery</code></td>
-<td>Number of weeks since surgery</td>
-</tr>
-<tr class="even">
-<td><code>status_as_of_2021_01_19</code></td>
-<td>Status since 2021-01-19: Alive, Deceased or NA</td>
-</tr>
-<tr class="odd">
-<td><code>sex</code></td>
-<td>Patient sex</td>
-</tr>
-<tr class="even">
-<td><code>date_of_diagnosis</code></td>
-<td>Date of diagnosis</td>
-</tr>
-<tr class="odd">
-<td><code>age_at_diagnosis</code></td>
-<td>Age at diagnosis</td>
-</tr>
-<tr class="even">
-<td><code>smoking_status</code></td>
-<td>Smoking status</td>
-</tr>
-<tr class="odd">
-<td><code>notes_2</code></td>
-<td>Notes about smoking history</td>
-</tr>
-</tbody>
-</table>
++---------------------------+--------------------------------------------------------------------------------------+
+| Column name               | Description                                                                          |
++===========================+======================================================================================+
+| `accel_id`                | CRUK Accelerator patient identifier                                                  |
++---------------------------+--------------------------------------------------------------------------------------+
+| `target_lung_id`          | Targeted Lung Health Check patient identifier                                        |
++---------------------------+--------------------------------------------------------------------------------------+
+| `tissue`                  | NSCLC type: Adenocarcinoma or Squamous cell carcinoma                                |
++---------------------------+--------------------------------------------------------------------------------------+
+| `n_somatic_variants`      | Total number of somatic variants identified by whole exome sequencing                |
++---------------------------+--------------------------------------------------------------------------------------+
+| `mut_burden_per_mb`       | Mutational burden: mutations per million bases of DNA.\                              |
+|                           | Exome target size was 35.7 Mb                                                        |
++---------------------------+--------------------------------------------------------------------------------------+
+| `obs_class_I`             | Number of observed HLA I peptides by mass spec. immunopeptidomics                    |
++---------------------------+--------------------------------------------------------------------------------------+
+| `obs_class_II`            | Number of observed HLA II peptides by mass spec. immunopeptidomics                   |
++---------------------------+--------------------------------------------------------------------------------------+
+| `HLA`                     | Class I and II HLA allotypes identified by genomic sequencing                        |
++---------------------------+--------------------------------------------------------------------------------------+
+| `wet_weight`              | Wet weight of tumour tissue                                                          |
++---------------------------+--------------------------------------------------------------------------------------+
+| `tumour_purity`           | Tumour purity as calculated from WES by ASCAT                                        |
++---------------------------+--------------------------------------------------------------------------------------+
+| `tumour_ploidy`           | Tumour ploidy as calculated from WES by ASCAT                                        |
++---------------------------+--------------------------------------------------------------------------------------+
+| `til_status`              | Tumour infiltrating T-cell status by immunohistochemistry: Low, Moderate, High or NA |
++---------------------------+--------------------------------------------------------------------------------------+
+| `weeks_post_surgery`      | Number of weeks since surgery                                                        |
++---------------------------+--------------------------------------------------------------------------------------+
+| `status_as_of_2021_01_19` | Status since 2021-01-19: Alive, Deceased or NA                                       |
++---------------------------+--------------------------------------------------------------------------------------+
+| `sex`                     | Patient sex                                                                          |
++---------------------------+--------------------------------------------------------------------------------------+
+| `date_of_diagnosis`       | Date of diagnosis                                                                    |
++---------------------------+--------------------------------------------------------------------------------------+
+| `age_at_diagnosis`        | Age at diagnosis                                                                     |
++---------------------------+--------------------------------------------------------------------------------------+
+| `smoking_status`          | Smoking status                                                                       |
++---------------------------+--------------------------------------------------------------------------------------+
+| `notes_2`                 | Notes about smoking history                                                          |
++---------------------------+--------------------------------------------------------------------------------------+
+
+: Patient information Table S1 variables
 
 Patient information Table S1 variables
 
 ## Supplementary Material 2 and 3: pVACseq predicted neoantigens
 
-Supplementary Material 2 and 3 are Tables S2 and S3. These are `csv`
-files containing all the pVACseq predicted neoantigen peptides and their
-wildtype equivalents, the table below contains descriptions of the
-values contained in each column. Each row in Tables S2 and S3 represents
-one set of predictions i.e. one mutation and predicted neoantigen
-peptide per row.
+Supplementary Material 2 and 3 are Tables S2 and S3. These are `csv` files containing all the pVACseq predicted neoantigen peptides and their wildtype equivalents, the table below contains descriptions of the values contained in each column. Each row in Tables S2 and S3 represents one set of predictions i.e. one mutation and predicted neoantigen peptide per row.
 
-Table S2 has 27,446 rows and 59 columns. Table S3 has 127,015 rows and
-59 columns.
+Table S2 has 27,446 rows and 59 columns. Table S3 has 127,015 rows and 59 columns.
 
-<table>
-<caption>pVACseq predictions Tables S2 and S3 variables
-{#tbl-supp-02-03}</caption>
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 77%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Column Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>sample</code></td>
-<td>CRUK Accelerator patient identifier</td>
-</tr>
-<tr class="even">
-<td><code>Chromosome</code></td>
-<td>The chromosome of this variant</td>
-</tr>
-<tr class="odd">
-<td><code>Start</code></td>
-<td>The start position of this variant in the zero-based, half-open
-coordinate system</td>
-</tr>
-<tr class="even">
-<td><code>Stop</code></td>
-<td>The stop position of this variant in the zero-based, half-open
-coordinate system</td>
-</tr>
-<tr class="odd">
-<td><code>Reference</code></td>
-<td>The reference allele</td>
-</tr>
-<tr class="even">
-<td><code>Variant</code></td>
-<td>The alt allele</td>
-</tr>
-<tr class="odd">
-<td><code>Transcript</code></td>
-<td>The Ensembl ID of the affected transcript</td>
-</tr>
-<tr class="even">
-<td><code>Transcript Support Level</code></td>
-<td>The <a
-href="https://useast.ensembl.org/info/genome/genebuild/transcript_quality_tags.html#tsl">transcript
-support level (TSL)</a> of the affected transcript. <code>NA</code> if
-the VCF entry doesn’t contain TSL information.</td>
-</tr>
-<tr class="odd">
-<td><code>Ensembl Gene ID</code></td>
-<td>The Ensembl ID of the affected gene</td>
-</tr>
-<tr class="even">
-<td><code>Variant Type</code></td>
-<td>The type of variant. <code>missense</code> for missense mutations,
-<code>inframe_ins</code> for inframe insertions,
-<code>inframe_del</code> for inframe deletions, and <code>FS</code> for
-frameshift variants</td>
-</tr>
-<tr class="odd">
-<td><code>Mutation</code></td>
-<td>The amnio acid change of this mutation</td>
-</tr>
-<tr class="even">
-<td><code>Protein Position</code></td>
-<td>The protein position of the mutation</td>
-</tr>
-<tr class="odd">
-<td><code>Gene Name</code></td>
-<td>The Ensembl gene name of the affected gene</td>
-</tr>
-<tr class="even">
-<td><code>HGVSc</code></td>
-<td>The HGVS coding sequence variant name</td>
-</tr>
-<tr class="odd">
-<td><code>HGVSp</code></td>
-<td>The HGVS protein sequence variant name</td>
-</tr>
-<tr class="even">
-<td><code>HLA Allele</code></td>
-<td>The HLA allele for this prediction</td>
-</tr>
-<tr class="odd">
-<td><code>Peptide Length</code></td>
-<td>The peptide length of the epitope</td>
-</tr>
-<tr class="even">
-<td><code>Sub-peptide Position</code></td>
-<td>The one-based position of the epitope within the protein sequence
-used to make the prediction</td>
-</tr>
-<tr class="odd">
-<td><code>Mutation Position</code></td>
-<td>The one-based position of the start of the mutation within the
-epitope sequence. <code>0</code> if the start of the mutation is before
-the epitope</td>
-</tr>
-<tr class="even">
-<td><code>MT Epitope Seq</code></td>
-<td>The mutant epitope sequence</td>
-</tr>
-<tr class="odd">
-<td><code>WT Epitope Seq</code></td>
-<td>The wildtype (reference) epitope sequence at the same position in
-the full protein sequence. <code>NA</code> if there is no wildtype
-sequence at this position or if more than half of the amino acids of the
-mutant epitope are mutated</td>
-</tr>
-<tr class="even">
-<td><code>Best MT Score Method</code></td>
-<td>Prediction algorithm with the lowest mutant ic50 binding affinity
-for this epitope</td>
-</tr>
-<tr class="odd">
-<td><code>Best MT Score</code></td>
-<td>Lowest ic50 binding affinity of all prediction algorithms used</td>
-</tr>
-<tr class="even">
-<td><code>Corresponding WT Score</code></td>
-<td>ic50 binding affinity of the wildtype epitope. <code>NA</code> if
-there is no <code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="odd">
-<td><code>Corresponding Fold Change</code></td>
-<td><code>Corresponding WT Score</code> / <code>Best MT Score</code>.
-<code>NA</code> if there is no <code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="even">
-<td><code>Best MT Percentile Method</code></td>
-<td>Prediction algorithm with the lowest binding affinity percentile
-rank for this epitope</td>
-</tr>
-<tr class="odd">
-<td><code>Best MT Percentile</code></td>
-<td>Lowest percentile rank of this epitope’s ic50 binding affinity of
-all prediction algorithms used (those that provide percentile
-output)</td>
-</tr>
-<tr class="even">
-<td><code>Corresponding WT Percentile</code></td>
-<td>binding affinity percentile rank of the wildtype epitope.
-<code>NA</code> if there is no <code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="odd">
-<td><code>Tumor DNA Depth</code></td>
-<td>Tumor DNA depth at this position. <code>NA</code> if VCF entry does
-not contain tumor DNA readcount annotation.</td>
-</tr>
-<tr class="even">
-<td><code>Tumor DNA VAF</code></td>
-<td>Tumor DNA variant allele frequency (VAF) at this position.
-<code>NA</code> if VCF entry does not contain tumor DNA readcount
-annotation.</td>
-</tr>
-<tr class="odd">
-<td><code>Tumor RNA Depth</code></td>
-<td>Tumor RNA depth at this position. <code>NA</code> if VCF entry does
-not contain tumor RNA readcount annotation.</td>
-</tr>
-<tr class="even">
-<td><code>Tumor RNA VAF</code></td>
-<td>Tumor RNA variant allele frequency (VAF) at this position.
-<code>NA</code> if VCF entry does not contain tumor RNA readcount
-annotation.</td>
-</tr>
-<tr class="odd">
-<td><code>Normal Depth</code></td>
-<td>Normal DNA depth at this position. <code>NA</code> if VCF entry does
-not contain normal DNA readcount annotation.</td>
-</tr>
-<tr class="even">
-<td><code>Normal VAF</code></td>
-<td>Normal DNA variant allele frequency (VAF) at this position.
-<code>NA</code> if VCF entry does not contain normal DNA readcount
-annotation.</td>
-</tr>
-<tr class="odd">
-<td><code>Gene Expression</code></td>
-<td>Gene expression value for the annotated gene containing the variant.
-<code>NA</code> if VCF entry does not contain gene expression
-annotation.</td>
-</tr>
-<tr class="even">
-<td><code>Transcript Expression</code></td>
-<td>Transcript expression value for the annotated transcript containing
-the variant. <code>NA</code> if VCF entry does not contain transcript
-expression annotation.</td>
-</tr>
-<tr class="odd">
-<td><code>Median MT Score</code></td>
-<td>Median ic50 binding affinity of the mutant epitope across all
-prediction algorithms used</td>
-</tr>
-<tr class="even">
-<td><code>Median WT Score</code></td>
-<td>Median ic50 binding affinity of the wildtype epitope across all
-prediction algorithms used. <code>NA</code> if there is no
-<code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="odd">
-<td><code>Median Fold Change</code></td>
-<td><code>Median WT Score</code> / <code>Median MT Score</code>.
-<code>NA</code> if there is no <code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="even">
-<td><code>Individual Prediction Algorithm WT and MT Scores</code>
-(multiple)</td>
-<td><p>ic50 binding affintity for the <code>MT Epitope Seq</code> and
-<code>WT Eptiope Seq</code> for the individual prediction algorithms
-used.</p>
-<p>Four binding algorithms were used for class I predictions (MHCflurry,
-MHCnuggetsI, NNalign, NetMHC, PickPocket) and four for class II
-predictions (MHCnuggetsII, NetMHCIIpan, NNalign, SMMalign).</p></td>
-</tr>
-<tr class="odd">
-<td><code>cterm_7mer_gravy_score</code></td>
-<td>Mean hydropathy of last 7 residues on the C-terminus of the
-peptide</td>
-</tr>
-<tr class="even">
-<td><code>max_7mer_gravy_score</code></td>
-<td>Max GRAVY score of any kmer in the amino acid sequence. Used to
-determine if there are any extremely hydrophobic regions within a longer
-amino acid sequence.</td>
-</tr>
-<tr class="odd">
-<td><code>difficult_n_terminal_residue</code> (T/F)</td>
-<td>Is N-terminal amino acid a Glutamine, Glutamic acid, or
-Cysteine?</td>
-</tr>
-<tr class="even">
-<td><code>c_terminal_cysteine</code> (T/F)</td>
-<td>Is the C-terminal amino acid a Cysteine?</td>
-</tr>
-<tr class="odd">
-<td><code>c_terminal_proline</code> (T/F)</td>
-<td>Is the C-terminal amino acid a Proline?</td>
-</tr>
-<tr class="even">
-<td><code>cysteine_count</code></td>
-<td>Number of Cysteines in the amino acid sequence. Problematic because
-they can form disulfide bonds across distant parts of the peptide</td>
-</tr>
-<tr class="odd">
-<td><code>n_terminal_asparagine</code> (T/F)</td>
-<td>Is the N-terminal amino acid an Asparagine?</td>
-</tr>
-<tr class="even">
-<td><code>asparagine_proline_bond_count</code></td>
-<td>Number of Asparagine-Proline bonds. Problematic because they can
-spontaneously cleave the peptide</td>
-</tr>
-<tr class="odd">
-<td><code>b_rank</code></td>
-<td>Rank of binding score: 1/median neoantigen binding affinity . Lower
-is better</td>
-</tr>
-<tr class="even">
-<td><code>f_rank</code></td>
-<td>Rank of fold change: the difference in median binding affinity
-between neoantigen and wildtype peptide (agretopicity). Higher is
-better.</td>
-</tr>
-<tr class="odd">
-<td><code>m_rank</code></td>
-<td>Ranks of mutant allele expression: the product of
-<code>gene_expression</code> and <code>tumor_rna_vaf</code> . Higher is
-better.</td>
-</tr>
-<tr class="even">
-<td><code>d_rank</code></td>
-<td>Rank of the <code>tumor_dna_vaf</code> . Higher is better.</td>
-</tr>
-<tr class="odd">
-<td><code>score</code></td>
-<td>A <code>score</code> is calculated from the above ranks with the
-following formula:
-<code>b_rank + f_rank + (m_rank * 2) + (d_rank/2)</code> . Higher is
-better</td>
-</tr>
-<tr class="even">
-<td><code>rank_score</code></td>
-<td>The <code>score</code> converted to a rank, with the best being 1,
-splitting ties by first. Lower is better</td>
-</tr>
-<tr class="odd">
-<td><code>rank_percent</code></td>
-<td>The percentage rank score. Lower is better.</td>
-</tr>
-</tbody>
-</table>
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Column Name                                                   | Description                                                                                                                                                                                                                   |
++===============================================================+===============================================================================================================================================================================================================================+
+| `sample`                                                      | CRUK Accelerator patient identifier                                                                                                                                                                                           |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Chromosome`                                                  | The chromosome of this variant                                                                                                                                                                                                |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Start`                                                       | The start position of this variant in the zero-based, half-open coordinate system                                                                                                                                             |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Stop`                                                        | The stop position of this variant in the zero-based, half-open coordinate system                                                                                                                                              |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Reference`                                                   | The reference allele                                                                                                                                                                                                          |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Variant`                                                     | The alt allele                                                                                                                                                                                                                |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Transcript`                                                  | The Ensembl ID of the affected transcript                                                                                                                                                                                     |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Transcript Support Level`                                    | The [transcript support level (TSL)](https://useast.ensembl.org/info/genome/genebuild/transcript_quality_tags.html#tsl) of the affected transcript. `NA` if the VCF entry doesn\'t contain TSL information.                   |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Ensembl Gene ID`                                             | The Ensembl ID of the affected gene                                                                                                                                                                                           |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Variant Type`                                                | The type of variant. `missense` for missense mutations, `inframe_ins` for inframe insertions, `inframe_del` for inframe deletions, and `FS` for frameshift variants                                                           |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Mutation`                                                    | The amnio acid change of this mutation                                                                                                                                                                                        |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Protein Position`                                            | The protein position of the mutation                                                                                                                                                                                          |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Gene Name`                                                   | The Ensembl gene name of the affected gene                                                                                                                                                                                    |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `HGVSc`                                                       | The HGVS coding sequence variant name                                                                                                                                                                                         |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `HGVSp`                                                       | The HGVS protein sequence variant name                                                                                                                                                                                        |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `HLA Allele`                                                  | The HLA allele for this prediction                                                                                                                                                                                            |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Peptide Length`                                              | The peptide length of the epitope                                                                                                                                                                                             |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Sub-peptide Position`                                        | The one-based position of the epitope within the protein sequence used to make the prediction                                                                                                                                 |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Mutation Position`                                           | The one-based position of the start of the mutation within the epitope sequence. `0` if the start of the mutation is before the epitope                                                                                       |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `MT Epitope Seq`                                              | The mutant epitope sequence                                                                                                                                                                                                   |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `WT Epitope Seq`                                              | The wildtype (reference) epitope sequence at the same position in the full protein sequence. `NA` if there is no wildtype sequence at this position or if more than half of the amino acids of the mutant epitope are mutated |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Best MT Score Method`                                        | Prediction algorithm with the lowest mutant ic50 binding affinity for this epitope                                                                                                                                            |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Best MT Score`                                               | Lowest ic50 binding affinity of all prediction algorithms used                                                                                                                                                                |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Corresponding WT Score`                                      | ic50 binding affinity of the wildtype epitope. `NA` if there is no `WT Epitope Seq`.                                                                                                                                          |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Corresponding Fold Change`                                   | `Corresponding WT Score` / `Best MT Score`. `NA` if there is no `WT Epitope Seq`.                                                                                                                                             |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Best MT Percentile Method`                                   | Prediction algorithm with the lowest binding affinity percentile rank for this epitope                                                                                                                                        |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Best MT Percentile`                                          | Lowest percentile rank of this epitope\'s ic50 binding affinity of all prediction algorithms used (those that provide percentile output)                                                                                      |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Corresponding WT Percentile`                                 | binding affinity percentile rank of the wildtype epitope. `NA` if there is no `WT Epitope Seq`.                                                                                                                               |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Tumor DNA Depth`                                             | Tumor DNA depth at this position. `NA` if VCF entry does not contain tumor DNA readcount annotation.                                                                                                                          |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Tumor DNA VAF`                                               | Tumor DNA variant allele frequency (VAF) at this position. `NA` if VCF entry does not contain tumor DNA readcount annotation.                                                                                                 |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Tumor RNA Depth`                                             | Tumor RNA depth at this position. `NA` if VCF entry does not contain tumor RNA readcount annotation.                                                                                                                          |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Tumor RNA VAF`                                               | Tumor RNA variant allele frequency (VAF) at this position. `NA` if VCF entry does not contain tumor RNA readcount annotation.                                                                                                 |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Normal Depth`                                                | Normal DNA depth at this position. `NA` if VCF entry does not contain normal DNA readcount annotation.                                                                                                                        |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Normal VAF`                                                  | Normal DNA variant allele frequency (VAF) at this position. `NA` if VCF entry does not contain normal DNA readcount annotation.                                                                                               |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Gene Expression`                                             | Gene expression value for the annotated gene containing the variant. `NA` if VCF entry does not contain gene expression annotation.                                                                                           |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Transcript Expression`                                       | Transcript expression value for the annotated transcript containing the variant. `NA` if VCF entry does not contain transcript expression annotation.                                                                         |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Median MT Score`                                             | Median ic50 binding affinity of the mutant epitope across all prediction algorithms used                                                                                                                                      |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Median WT Score`                                             | Median ic50 binding affinity of the wildtype epitope across all prediction algorithms used. `NA` if there is no `WT Epitope Seq`.                                                                                             |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Median Fold Change`                                          | `Median WT Score` / `Median MT Score`. `NA` if there is no `WT Epitope Seq`.                                                                                                                                                  |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Individual Prediction Algorithm WT and MT Scores` (multiple) | ic50 binding affintity for the `MT Epitope Seq` and `WT Eptiope Seq` for the individual prediction algorithms used.                                                                                                           |
+|                                                               |                                                                                                                                                                                                                               |
+|                                                               | Four binding algorithms were used for class I predictions (MHCflurry, MHCnuggetsI, NNalign, NetMHC, PickPocket) and four for class II predictions (MHCnuggetsII, NetMHCIIpan, NNalign, SMMalign).                             |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `cterm_7mer_gravy_score`                                      | Mean hydropathy of last 7 residues on the C-terminus of the peptide                                                                                                                                                           |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `max_7mer_gravy_score`                                        | Max GRAVY score of any kmer in the amino acid sequence. Used to determine if there are any extremely hydrophobic regions within a longer amino acid sequence.                                                                 |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `difficult_n_terminal_residue` (T/F)                          | Is N-terminal amino acid a Glutamine, Glutamic acid, or Cysteine?                                                                                                                                                             |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `c_terminal_cysteine` (T/F)                                   | Is the C-terminal amino acid a Cysteine?                                                                                                                                                                                      |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `c_terminal_proline` (T/F)                                    | Is the C-terminal amino acid a Proline?                                                                                                                                                                                       |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `cysteine_count`                                              | Number of Cysteines in the amino acid sequence. Problematic because they can form disulfide bonds across distant parts of the peptide                                                                                         |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `n_terminal_asparagine` (T/F)                                 | Is the N-terminal amino acid an Asparagine?                                                                                                                                                                                   |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `asparagine_proline_bond_count`                               | Number of Asparagine-Proline bonds. Problematic because they can spontaneously cleave the peptide                                                                                                                             |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `b_rank`                                                      | Rank of binding score: 1/median neoantigen binding affinity . Lower is better                                                                                                                                                 |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `f_rank`                                                      | Rank of fold change: the difference in median binding affinity between neoantigen and wildtype peptide (agretopicity). Higher is better.                                                                                      |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `m_rank`                                                      | Ranks of mutant allele expression: the product of `gene_expression` and `tumor_rna_vaf` . Higher is better.                                                                                                                   |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `d_rank`                                                      | Rank of the `tumor_dna_vaf` . Higher is better.                                                                                                                                                                               |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `score`                                                       | A `score` is calculated from the above ranks with the following formula: `b_rank + f_rank + (m_rank * 2) + (d_rank/2)` . Higher is better                                                                                     |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `rank_score`                                                  | The `score` converted to a rank, with the best being 1, splitting ties by first. Lower is better                                                                                                                              |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `rank_percent`                                                | The percentage rank score. Lower is better.                                                                                                                                                                                   |
++---------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+: pVACseq predictions Tables S2 and S3 variables {#tbl-supp-02-03}
 
 pVACseq predictions Tables S2 and S3 variables {#tbl-supp-02-03}
 
 ## Supplementary Material 4: Tested neoantigens
 
-Supplementary Material 4 is Table S4, a `csv` file with 70 rows and 17
-column variables for the neoantigen peptide predictions tested by IFN-𝛄
-ELISPOT. Each row in Table S4 represents one neoantigen peptide and its
-wildtype equivalent and the table below contains descriptions of the
-values contained in each column of Table S4.
+Supplementary Material 4 is Table S4, a `csv` file with 70 rows and 17 column variables for the neoantigen peptide predictions tested by IFN-𝛄 ELISPOT. Each row in Table S4 represents one neoantigen peptide and its wildtype equivalent and the table below contains descriptions of the values contained in each column of Table S4.
 
 Tested candidate neoantigen peptides Table S4 variables
 
-|  |  |
-|----|----|
-| **Column name** | **Description** |
-| `accel_id` | CRUK Accelerator patient identifier |
-| `gene_name` | Gene |
-| `mt_epitope_seq` | Mutated (neoantigen) peptide sequeunce |
-| `wt_epitope_seq` | Wildtype peptide sequence |
-| `peptide_length` | Peptide length |
-| `table_name` | Identifier in the form `accel_id` / `predicted_hla_allotype` / `peptide_length` e.g. `A119/DRB1*04:04/15` |
-| `mutation` | The mutation `From/To` |
-| `protein_position` | Location of the mutation in the source protein, UNIPROT sequence number. |
-| `Obs_I` | The number of peptides from the source protein observed by mass spectrometry observed in HLA-I immunopeptidome |
-| `Obs_II` | The number of peptides from the source protein observed by mass spectrometry observed in HLA-II immunopeptidome |
-| `median_mt_score` | The median pVACseq predicted binding affinity of the neoantigen peptide |
-| `median_wt_score` | The median pVACseq predicted binding affinity of the wildtype peptide |
-| `median_fold_change` | The ratio between the median neoantigen affinity and wildtype peptide affinity |
-| `rank_percent` | The overall rank percentage for the neoantigen from pVACseq for the peptide of that length and HLA allotype. |
-| `mean_sfc_mt` | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the neoantigen peptide |
-| `mean_sfc_wt` | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the wildtype peptide |
-| `elispot_response` | ELISPOT response category: Strong, Weak or None |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| **Column name**                  | **Description**                                                                                                 |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `accel_id`                       | CRUK Accelerator patient identifier                                                                             |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `gene_name`                      | Gene                                                                                                            |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `mt_epitope_seq`                 | Mutated (neoantigen) peptide sequeunce                                                                          |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `wt_epitope_seq`                 | Wildtype peptide sequence                                                                                       |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `peptide_length`                 | Peptide length                                                                                                  |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `table_name`                     | Identifier in the form `accel_id` / `predicted_hla_allotype` / `peptide_length` e.g. `A119/DRB1*04:04/15`       |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `mutation`                       | The mutation `From/To`                                                                                          |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `protein_position`               | Location of the mutation in the source protein, UNIPROT sequence number.                                        |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `Obs_I`                          | The number of peptides from the source protein observed by mass spectrometry observed in HLA-I immunopeptidome  |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `Obs_II`                         | The number of peptides from the source protein observed by mass spectrometry observed in HLA-II immunopeptidome |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `median_mt_score`                | The median pVACseq predicted binding affinity of the neoantigen peptide                                         |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `median_wt_score`                | The median pVACseq predicted binding affinity of the wildtype peptide                                           |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `median_fold_change`             | The ratio between the median neoantigen affinity and wildtype peptide affinity                                  |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `rank_percent`                   | The overall rank percentage for the neoantigen from pVACseq for the peptide of that length and HLA allotype.    |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `mean_sfc_mt`                    | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the neoantigen peptide                              |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `mean_sfc_wt`                    | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the wildtype peptide                                |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| `elispot_response`               | ELISPOT response category: Strong, Weak or None                                                                 |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 ### Table S5 List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
 
-|                              |                           |                     |
-|------------------------------|---------------------------|---------------------|
++------------------------------+---------------------------+---------------------+
 | **Patient ID and condition** | **TotalSeq C Hashtag ID** | **Hashtag barcode** |
++------------------------------+---------------------------+---------------------+
 | A119_PTPRT-12\_**MUT**       | C0255                     | AAGTATCGTTTCGCA     |
++------------------------------+---------------------------+---------------------+
 | A119_PTPRT-12\_**WT**        | C0256                     | GGTTGCCAGATGTCA     |
++------------------------------+---------------------------+---------------------+
