@@ -1,7 +1,16 @@
-# Supplementary Information for Proteogenomics guided identification of functional neoantigens in non-small cell lung cancer
 
-This repository is associated with Zenodo object:
+Last Updated on 2024-07-25
+
+# Supplementary Materials
+
+This repository contains the supplementary tables as `csv` files for:
+**Proteogenomics guided identification of functional neoantigens in
+non-small cell lung cancer**. This repository is associated with Zenodo
+object:
 [10.5281/zenodo.12820423](https://zenodo.org/doi/10.5281/zenodo.12820423).
+
+The column names and contents of the `csv` files in the `tables` folder
+are described below.
 
 ## Supplementary Material 1: Patient information
 
@@ -9,11 +18,10 @@ Supplementary Material 1 is Table S1, a `csv` file containing patient
 information with 24 rows and 21 column variables. Each row in Table S1
 represents observations for a single patient.
 
-The table below provides descriptions of the values contained in each
-column of Table S1.
+<a href="#tbl-supp-01" class="quarto-xref">Table 1</a> provides
+descriptions of the values contained in each column of Table S1.
 
 <table>
-<caption>Patient information Table S1 variables</caption>
 <colgroup>
 <col style="width: 24%" />
 <col style="width: 75%" />
@@ -109,23 +117,20 @@ Moderate, High or NA</td>
 </tbody>
 </table>
 
-Patient information Table S1 variables
-
 ## Supplementary Material 2 and 3: pVACseq predicted neoantigens
 
 Supplementary Material 2 and 3 are Tables S2 and S3. These are `csv`
-files containing all the pVACseq predicted neoantigen peptides and their
-wildtype equivalents, the table below contains descriptions of the
-values contained in each column. Each row in Tables S2 and S3 represents
-one set of predictions i.e. one mutation and predicted neoantigen
-peptide per row.
+files containing all the pVACseq \[[1](#ref-hundal2016)\] predicted
+neoantigen peptides and their wildtype equivalents,
+<a href="#tbl-supp-02-03" class="quarto-xref">Table 2</a> contains
+descriptions of the values contained in each column. Each row in Tables
+S2 and S3 represents one set of predictions i.e. one mutation and
+predicted neoantigen peptide per row.
 
 Table S2 has 27,446 rows and 59 columns. Table S3 has 127,015 rows and
 59 columns.
 
 <table>
-<caption>pVACseq predictions Tables S2 and S3 variables
-{#tbl-supp-02-03}</caption>
 <colgroup>
 <col style="width: 22%" />
 <col style="width: 77%" />
@@ -419,20 +424,17 @@ splitting ties by first. Lower is better</td>
 </tbody>
 </table>
 
-pVACseq predictions Tables S2 and S3 variables {#tbl-supp-02-03}
-
 ## Supplementary Material 4: Tested neoantigens
 
 Supplementary Material 4 is Table S4, a `csv` file with 70 rows and 17
 column variables for the neoantigen peptide predictions tested by IFN-𝛄
-ELISPOT. Each row in Table S4 represents one neoantigen peptide and its
-wildtype equivalent and the table below contains descriptions of the
-values contained in each column of Table S4.
-
-Tested candidate neoantigen peptides Table S4 variables
+ELISPOT using autologous PBMCs. Each row in Table S4 represents one
+neoantigen peptide and its wildtype equivalent and
+<a href="#tbl-supp-04" class="quarto-xref">Table 3</a> contains
+descriptions of the values contained in each column of Table S4.
 
 |  |  |
-|----|----|
+|-------------|-----------------------------------------------------------|
 | **Column name** | **Description** |
 | `accel_id` | CRUK Accelerator patient identifier |
 | `gene_name` | Gene |
@@ -452,10 +454,19 @@ Tested candidate neoantigen peptides Table S4 variables
 | `mean_sfc_wt` | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the wildtype peptide |
 | `elispot_response` | ELISPOT response category: Strong, Weak or None |
 
-### Table S5 List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
+### **Table S5** List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
 
 |                              |                           |                     |
-|------------------------------|---------------------------|---------------------|
+|---------------------------|-------------------------|--------------------|
 | **Patient ID and condition** | **TotalSeq C Hashtag ID** | **Hashtag barcode** |
 | A119_PTPRT-12\_**MUT**       | C0255                     | AAGTATCGTTTCGCA     |
 | A119_PTPRT-12\_**WT**        | C0256                     | GGTTGCCAGATGTCA     |
+
+## References
+
+<span class="csl-left-margin">1.
+</span><span class="csl-right-inline">Hundal J, Carreno BM, Petti AA,
+Linette GP, Griffith OL, Mardis ER, et al. pVAC-seq: A genome-guided in
+silico approach to identifying tumor neoantigens. Genome Medicine.
+2016;8: 11.
+doi:[10.1186/s13073-016-0264-5](https://doi.org/10.1186/s13073-016-0264-5)</span>
