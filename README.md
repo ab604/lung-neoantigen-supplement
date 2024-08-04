@@ -1,13 +1,12 @@
 
-Last Updated on 2024-07-25
+Last Updated on 2024-08-04
 
 # Supplementary Materials
 
 This repository contains the supplementary tables as `csv` files for:
 **Proteogenomics guided identification of functional neoantigens in
 non-small cell lung cancer** \[[1](#ref-nicholas2024)\]. This repository
-is associated with Zenodo DOI:
-[10.5281/zenodo.12823346](https://doi.org/10.5281/zenodo.12823346)[423](https://zenodo.org/doi/10.5281/zenodo.12820423).
+is associated with Zenodo DOI: .
 
 The column names and contents of the `csv` files in the `tables` folder
 are described below.
@@ -117,17 +116,45 @@ Moderate, High or NA</td>
 </tbody>
 </table>
 
-## Supplementary Material 2 and 3: pVACseq predicted neoantigens
+## Supplementary Material 2: NSCLC mutations
 
-Supplementary Material 2 and 3 are Tables S2 and S3. These are `csv`
+Supplementary Material 2 is Table S2, a compressed `csv` file containing
+all the mutations (variant calls) from the WES comparing tumour to
+normal adjacent tissue. It has 106,285 rows with 16 columns comprising
+the variants from 24 donors. Only SNVs, IN
+
+| Column variable | Description |
+|-----------|-------------------------------------------------------------|
+| `accel_id` | CRUK Accelerator patient identifier |
+| `vid` | Unique variant identifier |
+| `chrom` | Chromosome |
+| `pos` | Genomic coordinate |
+| `ref` | Reference base |
+| `alt` | Variant base |
+| `info` | Information field from VCF file |
+| `format` | Format of VCF variable columns |
+| `sample_1` | Reference sample VCF variable values corresponding with format |
+| `sample_2` | Tumour sample VCF variable values corresponding with format |
+| `type` | Variant type: `snv`, `ins` , `del` or `complex` . Single nucleotide variant, insertion, deletion and complex variant respectively |
+| `ensembl` | Ensembl gene identifier |
+| `gene_name` | HGNC gene name |
+| `vaf` | Variant allele frequency |
+| `tissue` | Lung tumour tissue type: `Squamous` or `Adenocarcinoma` |
+| `cell_compartment` | Cell compartment of protein product of gene, |
+
+NSCLC VCF Table S2 variables
+
+## Supplementary Material 4 and 4: pVACseq predicted neoantigens
+
+Supplementary Material 3 and 4 are Tables S3 and S4. These are `csv`
 files containing all the pVACseq \[[2](#ref-hundal2016)\] predicted
 neoantigen peptides and their wildtype equivalents,
-<a href="#tbl-supp-02-03" class="quarto-xref">Table 2</a> contains
+<a href="#tbl-supp-03-04" class="quarto-xref">Table 2</a> contains
 descriptions of the values contained in each column. Each row in Tables
-S2 and S3 represents one set of predictions i.e. one mutation and
+S3 and S4 represents one set of predictions i.e. one mutation and
 predicted neoantigen peptide per row.
 
-Table S2 has 27,446 rows and 59 columns. Table S3 has 127,015 rows and
+Table S3 has 27,446 rows and 59 columns. Table S4 has 127,015 rows and
 59 columns.
 
 <table>
@@ -424,14 +451,14 @@ splitting ties by first. Lower is better</td>
 </tbody>
 </table>
 
-## Supplementary Material 4: Tested neoantigens
+## Supplementary Material 5: Tested neoantigens
 
-Supplementary Material 4 is Table S4, a `csv` file with 70 rows and 17
+Supplementary Material 5 is Table S5, a `csv` file with 70 rows and 17
 column variables for the neoantigen peptide predictions tested by IFN-𝛄
 ELISPOT using autologous PBMCs. Each row in Table S4 represents one
 neoantigen peptide and its wildtype equivalent and
-<a href="#tbl-supp-04" class="quarto-xref">Table 3</a> contains
-descriptions of the values contained in each column of Table S4.
+<a href="#tbl-supp-05" class="quarto-xref">Table 3</a> contains
+descriptions of the values contained in each column of Table S5.
 
 |  |  |
 |-------------|-----------------------------------------------------------|
@@ -454,7 +481,7 @@ descriptions of the values contained in each column of Table S4.
 | `mean_sfc_wt` | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the wildtype peptide |
 | `elispot_response` | ELISPOT response category: Strong, Weak or None |
 
-### **Table S5** List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
+### **Table S6** List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
 
 |                              |                           |                     |
 |---------------------------|-------------------------|--------------------|
