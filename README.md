@@ -121,7 +121,10 @@ Moderate, High or NA</td>
 Supplementary Material 2 is Table S2, a compressed `csv` file containing
 all the mutations (variant calls) from the WES comparing tumour to
 normal adjacent tissue. It has 106,285 rows with 16 columns comprising
-the variants from 24 donors. Only SNVs, IN
+the variants from 24 donors. Variant types are single nucleotide
+variant, insertion, deletion and complex variant.
+<a href="#tbl-supp-02" class="quarto-xref">Table 2</a> contains the
+description of the column variables.
 
 | Column variable | Description |
 |-----------|-------------------------------------------------------------|
@@ -142,14 +145,12 @@ the variants from 24 donors. Only SNVs, IN
 | `tissue` | Lung tumour tissue type: `Squamous` or `Adenocarcinoma` |
 | `cell_compartment` | Cell compartment of protein product of gene, |
 
-NSCLC VCF Table S2 variables
-
 ## Supplementary Material 4 and 4: pVACseq predicted neoantigens
 
 Supplementary Material 3 and 4 are Tables S3 and S4. These are `csv`
 files containing all the pVACseq \[[2](#ref-hundal2016)\] predicted
 neoantigen peptides and their wildtype equivalents,
-<a href="#tbl-supp-03-04" class="quarto-xref">Table 2</a> contains
+<a href="#tbl-supp-03-04" class="quarto-xref">Table 3</a> contains
 descriptions of the values contained in each column. Each row in Tables
 S3 and S4 represents one set of predictions i.e. one mutation and
 predicted neoantigen peptide per row.
@@ -457,7 +458,7 @@ Supplementary Material 5 is Table S5, a `csv` file with 70 rows and 17
 column variables for the neoantigen peptide predictions tested by IFN-𝛄
 ELISPOT using autologous PBMCs. Each row in Table S4 represents one
 neoantigen peptide and its wildtype equivalent and
-<a href="#tbl-supp-05" class="quarto-xref">Table 3</a> contains
+<a href="#tbl-supp-05" class="quarto-xref">Table 4</a> contains
 descriptions of the values contained in each column of Table S5.
 
 |  |  |
