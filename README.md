@@ -6,7 +6,8 @@ Last Updated on 2024-08-04
 This repository contains the supplementary tables as `csv` files for:
 **Proteogenomics guided identification of functional neoantigens in
 non-small cell lung cancer** \[[1](#ref-nicholas2024)\]. This repository
-is associated with Zenodo DOI: .
+is associated with
+[![DOI](https://zenodo.org/badge/833647778.svg)](https://zenodo.org/doi/10.5281/zenodo.12820423)
 
 The column names and contents of the `csv` files in the `tables` folder
 are described below.
