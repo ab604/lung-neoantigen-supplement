@@ -146,7 +146,7 @@ description of the column variables.
 | `tissue` | Lung tumour tissue type: `Squamous` or `Adenocarcinoma` |
 | `cell_compartment` | Cell compartment of protein product of gene, |
 
-## Supplementary Material 4 and 4: pVACseq predicted neoantigens
+## Supplementary Material 3 and 4: pVACseq predicted neoantigens
 
 Supplementary Material 3 and 4 are Tables S3 and S4. These are `csv`
 files containing all the pVACseq \[[2](#ref-hundal2016)\] predicted
