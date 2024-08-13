@@ -1,16 +1,48 @@
 
-Last Updated on 2024-08-04
+Last Updated on 2024-08-13
+
+-   [Supplementary Materials](#supplementary-materials)
+    -   [Figure S1: ALYREF protein
+        coverage](#figure-s1-alyref-protein-coverage)
+    -   [Figure S2: MS/MS spectrum of putative neoantigen arising from
+        ALYREF](#figure-s2-msms-spectrum-of-putative-neoantigen-arising-from-alyref)
+    -   [Figure S3: MS/M spectrum of synthetic ALYREF
+        peptide](#figure-s3-msm-spectrum-of-synthetic-alyref-peptide)
+    -   [Supplementary Material 1: Patient
+        information](#supplementary-material-1-patient-information)
+    -   [Supplementary Material 2: NSCLC
+        mutations](#supplementary-material-2-nsclc-mutations)
+    -   [Supplementary Material 3 and 4: pVACseq predicted
+        neoantigens](#supplementary-material-3-and-4-pvacseq-predicted-neoantigens)
+    -   [Supplementary Material 5: Tested
+        neoantigens](#supplementary-material-5-tested-neoantigens)
+        -   [**Table S6** List of patient samples selected for
+            single-cell RNA and TCR sequencing and TotalSeq C antibodies
+            (Biolegend).](#table-s6-list-of-patient-samples-selected-for-single-cell-rna-and-tcr-sequencing-and-totalseq-c-antibodies-biolegend.)
+    -   [References](#references)
 
 # Supplementary Materials
 
-This repository contains the supplementary tables as `csv` files for:
+This repository contains the supplementary figures and tables:
 **Proteogenomics guided identification of functional neoantigens in
 non-small cell lung cancer** \[[1](#ref-nicholas2024)\]. This repository
 is associated with
 [![DOI](https://zenodo.org/badge/833647778.svg)](https://zenodo.org/doi/10.5281/zenodo.12820423)
 
-The column names and contents of the `csv` files in the `tables` folder
-are described below.
+The tables S1 to S5 are `csv` files and the column names and contents of
+the `csv` files in are described below. Table S6 is shown below.
+
+### Figure S1: ALYREF protein coverage
+
+<img src="img/ALYREF-neoantigen-coverage-2024-07-18.png" width="4844" />
+
+### Figure S2: MS/MS spectrum of putative neoantigen arising from ALYREF
+
+<img src="img/figure-S02-2024-07-19.png" width="3900" />
+
+### Figure S3: MS/M spectrum of synthetic ALYREF peptide
+
+<img src="img/figure-S03-2024-07-19.png" width="3900" />
 
 ## Supplementary Material 1: Patient information
 
