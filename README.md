@@ -16,9 +16,9 @@ Last Updated on 2024-08-13
         neoantigens](#supplementary-material-3-and-4-pvacseq-predicted-neoantigens)
     -   [Supplementary Material 5: Tested
         neoantigens](#supplementary-material-5-tested-neoantigens)
-        -   [**Table S6** List of patient samples selected for
-            single-cell RNA and TCR sequencing and TotalSeq C antibodies
-            (Biolegend).](#table-s6-list-of-patient-samples-selected-for-single-cell-rna-and-tcr-sequencing-and-totalseq-c-antibodies-biolegend.)
+    -   [Table S6 List of patient samples selected for single-cell RNA
+        and TCR sequencing and TotalSeq C antibodies
+        (Biolegend).](#table-s6-list-of-patient-samples-selected-for-single-cell-rna-and-tcr-sequencing-and-totalseq-c-antibodies-biolegend.)
     -   [References](#references)
 
 # Supplementary Materials
@@ -515,7 +515,7 @@ descriptions of the values contained in each column of Table S5.
 | `mean_sfc_wt` | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the wildtype peptide |
 | `elispot_response` | ELISPOT response category: Strong, Weak or None |
 
-### **Table S6** List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
+## Table S6 List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
 
 |                              |                           |                     |
 |---------------------------|-------------------------|--------------------|
