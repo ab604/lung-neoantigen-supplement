@@ -30,7 +30,8 @@ is associated with
 [![DOI](https://zenodo.org/badge/833647778.svg)](https://zenodo.org/doi/10.5281/zenodo.12820423)
 
 The tables S1 to S5 are `csv` files and the column names and contents of
-the `csv` files in are described below. Table S6 is shown below.
+the `csv` files in are described below.
+<a href="#tbl-supp-06" class="quarto-xref">Table 5</a> is shown below.
 
 ### Figure S1: ALYREF protein coverage
 
