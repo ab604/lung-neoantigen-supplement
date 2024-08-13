@@ -2,23 +2,25 @@
 Last Updated on 2024-08-13
 
 -   [Supplementary Materials](#supplementary-materials)
-    -   [Figure S1: ALYREF protein
-        coverage](#figure-s1-alyref-protein-coverage)
-    -   [Figure S2: MS/MS spectrum of putative neoantigen arising from
-        ALYREF](#figure-s2-msms-spectrum-of-putative-neoantigen-arising-from-alyref)
-    -   [Figure S3: MS/M spectrum of synthetic ALYREF
-        peptide](#figure-s3-msm-spectrum-of-synthetic-alyref-peptide)
+    -   [Supplementary Figures](#sec-figs)
+        -   [Figure S1: ALYREF protein
+            coverage](#sec-figure-s1-alyref-protein-coverage)
+        -   [Figure S2: MS/MS spectrum of putative neoantigen arising
+            from
+            ALYREF](#sec-figure-s2-msms-spectrum-of-putative-neoantigen-arising-from-alyref)
+        -   [Figure S3: MS/M spectrum of synthetic ALYREF
+            peptide](#sec-figure-s3-msm-spectrum-of-synthetic-alyref-peptide)
     -   [Supplementary Material 1: Patient
-        information](#supplementary-material-1-patient-information)
+        information](#sec-supplementary-material-1-patient-information)
     -   [Supplementary Material 2: NSCLC
-        mutations](#supplementary-material-2-nsclc-mutations)
+        mutations](#sec-supplementary-material-2-nsclc-mutations)
     -   [Supplementary Material 3 and 4: pVACseq predicted
-        neoantigens](#supplementary-material-3-and-4-pvacseq-predicted-neoantigens)
+        neoantigens](#sec-supplementary-material-3-and-4-pvacseq-predicted-neoantigens)
     -   [Supplementary Material 5: Tested
-        neoantigens](#supplementary-material-5-tested-neoantigens)
+        neoantigens](#sec-supplementary-material-5-tested-neoantigens)
     -   [Table S6 List of patient samples selected for single-cell RNA
-        and TCR sequencing and TotalSeq C antibodies
-        (Biolegend).](#table-s6-list-of-patient-samples-selected-for-single-cell-rna-and-tcr-sequencing-and-totalseq-c-antibodies-biolegend.)
+        and TCR sequencing and TotalSeq C antibodies (Biolegend)
+        {#sec-table-s6-list-of-patient-samples-selected-for-single-cell-rna-and-tcr-sequencing-and-totalseq-c-antibodies-(biolegend.}](#table-s6-list-of-patient-samples-selected-for-single-cell-rna-and-tcr-sequencing-and-totalseq-c-antibodies-biolegend-sec-table-s6-list-of-patient-samples-selected-for-single-cell-rna-and-tcr-sequencing-and-totalseq-c-antibodies-biolegend.)
     -   [References](#references)
 
 # Supplementary Materials
@@ -31,7 +33,9 @@ is associated with
 
 The tables S1 to S5 are `csv` files and the column names and contents of
 the `csv` files in are described below.
-<a href="#tbl-supp-06" class="quarto-xref">Table 5</a> is shown below.
+<a href="#tbl-supp-06" class="quarto-xref">Table S6</a> is shown below.
+
+## Supplementary Figures
 
 ### Figure S1: ALYREF protein coverage
 
@@ -516,7 +520,7 @@ descriptions of the values contained in each column of Table S5.
 | `mean_sfc_wt` | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the wildtype peptide |
 | `elispot_response` | ELISPOT response category: Strong, Weak or None |
 
-## Table S6 List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend).
+## Table S6 List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend) {#sec-table-s6-list-of-patient-samples-selected-for-single-cell-rna-and-tcr-sequencing-and-totalseq-c-antibodies-(biolegend.}
 
 |                              |                           |                     |
 |---------------------------|-------------------------|--------------------|
