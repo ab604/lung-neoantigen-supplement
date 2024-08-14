@@ -1,5 +1,5 @@
 
-Last Updated on 2024-08-13
+Last Updated on 2024-08-14
 
 -   [Supplementary Materials](#supplementary-materials)
     -   [Supplementary Figures](#supplementary-figures)
@@ -33,7 +33,7 @@ is associated with
 
 The tables S1 to S5 are `csv` files and the column names and contents of
 the `csv` files in are described below.
-<a href="#tbl-supp-06" class="quarto-xref">Table S6</a> is shown below.
+<a href="#tbl-supp-06" class="quarto-xref">Table 5</a> is shown below.
 
 ## Supplementary Figures
 
@@ -52,7 +52,7 @@ the `csv` files in are described below.
 ## Supplementary Material 1: Patient information
 
 Supplementary Material 1 is Table S1, a `csv` file containing patient
-information with 24 rows and 21 column variables. Each row in Table S1
+information with 24 rows and 19 column variables. Each row in Table S1
 represents observations for a single patient.
 
 <a href="#tbl-supp-01" class="quarto-xref">Table 1</a> provides
@@ -132,16 +132,8 @@ Moderate, High or NA</td>
 <td>Status since 2021-01-19: Alive, Deceased or NA</td>
 </tr>
 <tr class="odd">
-<td><code>sex</code></td>
-<td>Patient sex</td>
-</tr>
-<tr class="even">
 <td><code>date_of_diagnosis</code></td>
 <td>Date of diagnosis</td>
-</tr>
-<tr class="odd">
-<td><code>age_at_diagnosis</code></td>
-<td>Age at diagnosis</td>
 </tr>
 <tr class="even">
 <td><code>smoking_status</code></td>
