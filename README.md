@@ -18,7 +18,7 @@ Last Updated on 2026-02-11
 This repository contains the supplementary data files for:
 **Immunopeptidomics-guided identification of functional neoantigens in non-small cell lung cancer** \[[1](#ref-nicholas2024)\]. This repository
 is associated with
-[![DOI](https://zenodo.org/badge/833647778.svg)](https://zenodo.org/doi/10.5281/zenodo.12820423)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12820423.svg)](https://zenodo.org/doi/10.5281/zenodo.12820423)
 
 **For Supplementary Figures S1-S11 and Supplementary Tables S1-S2, please refer to [supplement-2026-02-11.pdf](supplement-2026-02-11.pdf).**
 
