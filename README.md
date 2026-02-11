@@ -1,524 +1,294 @@
 
-Last Updated on 2025-12-04
+Last Updated on 2026-02-11
 
 -   [Supplementary Materials](#supplementary-materials)
-    -   [Supplementary Figures](#supplementary-figures)
-        -   [Figure S1: ALYREF protein
-            coverage](#figure-s1-alyref-protein-coverage)
-        -   [Figure S2: MS/MS spectrum of putative neoantigen arising
-            from
-            ALYREF](#figure-s2-msms-spectrum-of-putative-neoantigen-arising-from-alyref)
-        -   [Figure S3: MS/M spectrum of synthetic ALYREF
-            peptide](#figure-s3-msm-spectrum-of-synthetic-alyref-peptide)
-    -   [Supplementary Material 1: Patient
-        information](#supplementary-material-1-patient-information)
-    -   [Supplementary Material 2: NSCLC
-        mutations](#supplementary-material-2-nsclc-mutations)
-    -   [Supplementary Material 3 and 4: pVACseq predicted
-        neoantigens](#supplementary-material-3-and-4-pvacseq-predicted-neoantigens)
-    -   [Supplementary Material 5: Tested
-        neoantigens](#supplementary-material-5-tested-neoantigens)
-    -   [Table S6 List of patient samples selected for single-cell RNA
-        and TCR sequencing and TotalSeq C antibodies
-        (Biolegend)](#table-s6-list-of-patient-samples-selected-for-single-cell-rna-and-tcr-sequencing-and-totalseq-c-antibodies-biolegend)
+    -   [Supplementary Data S1: NSCLC Patient Information](#supplementary-data-s1-nsclc-patient-information)
+    -   [Supplementary Data S2: NSCLC Protein-Affecting Variants](#supplementary-data-s2-nsclc-protein-affecting-variants)
+    -   [Supplementary Data S3: NSCLC Missense Variants](#supplementary-data-s3-nsclc-missense-variants)
+    -   [Supplementary Data S4: NSCLC HLA Loss of Heterozygosity](#supplementary-data-s4-nsclc-hla-loss-of-heterozygosity)
+    -   [Supplementary Data S5: NSCLC Shared Protein Lists](#supplementary-data-s5-nsclc-shared-protein-lists)
+    -   [Supplementary Data S6: NSCLC pVACseq Class I Predictions](#supplementary-data-s6-nsclc-pvacseq-class-i-predictions)
+    -   [Supplementary Data S7: NSCLC pVACseq Class II Predictions](#supplementary-data-s7-nsclc-pvacseq-class-ii-predictions)
+    -   [Supplementary Data S8: NSCLC pVACseq Peptidome Combined Predictions](#supplementary-data-s8-nsclc-pvacseq-peptidome-combined-predictions)
+    -   [Supplementary Data S9: NSCLC Tested Neoantigens](#supplementary-data-s9-nsclc-tested-neoantigens)
     -   [References](#references)
 
 # Supplementary Materials
 
-This repository contains the supplementary figures and tables:
-**Proteogenomics guided identification of functional neoantigens in
-non-small cell lung cancer** \[[1](#ref-nicholas2024)\]. This repository
+This repository contains the supplementary data files for:
+**Immunopeptidomics-guided identification of functional neoantigens in non-small cell lung cancer** \[[1](#ref-nicholas2024)\]. This repository
 is associated with
 [![DOI](https://zenodo.org/badge/833647778.svg)](https://zenodo.org/doi/10.5281/zenodo.12820423)
 
-The tables S1 to S5 are `csv` files and the column names and contents of
-the `csv` files in are described below.
-<a href="#tbl-supp-06" class="quarto-xref">Table 5</a> is shown below.
+**For Supplementary Figures S1-S11 and Supplementary Tables S1-S2, please refer to [supplement-2026-02-11.pdf](supplement-2026-02-11.pdf).**
 
-## Supplementary Figures
+Supplementary Data S1 to S9 are `csv` files. The column names and contents of these files are described below.
 
-### Figure S1: ALYREF protein coverage
+## Supplementary Data S1: NSCLC Patient Information
 
-<img src="img/ALYREF-neoantigen-coverage-2024-07-18.png" width="4844" />
+Supplementary Data S1, a `csv` file containing patient information with 24 rows and 21 column variables. Each row in Supplementary Data S1 represents observations for a single patient.
 
-### Figure S2: MS/MS spectrum of putative neoantigen arising from ALYREF
+| Column Variable | Description |
+|-----------------------------------------|-------------------------------|
+| accel_id | CRUK Accelerator patient identifier |
+| target_lung_id | Targeted Lung Health Check patient identifier |
+| tissue | NSCLC type: Adenocarcinoma or Squamous cell carcinoma |
+| n_somatic_variants | Total number of somatic variants identified by whole exome sequencing |
+| mut_burden_per_mb | Mutational burden: mutations per million bases of DNA. Exome target size was 35.7 Mb |
+| obs_class_I | Number of observed HLA I peptides by mass spec. immunopeptidomics |
+| obs_class_II | Number of observed HLA II peptides by mass spec. immunopeptidomics |
+| HLA | Class I and II HLA allotypes identified by genomic sequencing |
+| wet_weight | Wet weight of tumour tissue |
+| tumour_purity | Tumour purity as calculated from WES by ASCAT |
+| tumour_ploidy | Tumour ploidy as calculated from WES by ASCAT |
+| til_status | Tumour infiltrating T-cell status by immunohistochemistry: Low, Moderate, High or NA |
+| weeks_post_surgery | Number of weeks since surgery |
+| status_as_of_2021_01_19 | Status since 2021-01-19: Alive, Deceased or NA |
+| date_of_diagnosis | Date of diagnosis |
+| smoking_status | Smoking status |
+| notes_2 | Notes about smoking history |
 
-<img src="img/figure-S02-2024-07-19.png" width="3900" />
+## Supplementary Data S2: NSCLC Protein-Affecting Variants
 
-### Figure S3: MS/M spectrum of synthetic ALYREF peptide
+| Column Variable | Description |
+|-----------------------------------------|-------------------------------|
+| accel_id | CRUK Accelerator patient identifier |
+| vid | Unique variant identifier |
+| chrom | Chromosome |
+| pos | Genomic coordinate |
+| ref | Reference base |
+| alt | Variant base |
+| type | Variant type: `snv`, `ins`, `del` or `complex`. Single nucleotide variant, insertion, deletion and complex variant respectively |
+| gene_name | HGNC gene name |
+| ensg | Ensembl gene identifier |
+| ensp | Ensembl protein identifier |
+| consequence | Variant consequence annotation |
+| biotype | Gene biotype filter: protein_coding |
+| canonical | Canonical transcript flag |
+| vaf | Variant allele frequency |
+| depth | Sequencing depth |
+| filter | Variant filter status |
+| info | Information field from VCF file |
+| format | Format of VCF variable columns |
+| sample_1 | Reference sample VCF variable values corresponding with format |
+| sample_2 | Tumour sample VCF variable values corresponding with format |
+| tissue | Lung tumour tissue type: `Squamous` or `Adenocarcinoma` |
 
-<img src="img/figure-S03-2024-07-19.png" width="3900" />
+## Supplementary Data S3: NSCLC Missense Variants
 
-## Supplementary Material 1: Patient information
+| Column Variable | Description |
+|-----------------------------------------|-------------------------------|
+| accel_id | CRUK Accelerator patient identifier |
+| vid | Unique variant identifier |
+| chrom | Chromosome |
+| pos | Genomic coordinate |
+| ref | Reference base |
+| alt | Variant base |
+| type | Variant type: `snv`, `ins`, `del` or `complex`. Single nucleotide variant, insertion, deletion and complex variant respectively |
+| gene_name | HGNC gene name |
+| ensg | Ensembl gene identifier |
+| ensp | Ensembl protein identifier |
+| vaf | Variant allele frequency |
+| depth | Sequencing depth |
+| filter | Variant filter status |
+| info | Information field from VCF file |
+| format | Format of VCF variable columns |
+| sample_1 | Reference sample VCF variable values corresponding with format |
+| sample_2 | Tumour sample VCF variable values corresponding with format |
+| tissue | Lung tumour tissue type: `Squamous` or `Adenocarcinoma` |
 
-Supplementary Material 1 is Table S1, a `csv` file containing patient
-information with 24 rows and 19 column variables. Each row in Table S1
-represents observations for a single patient.
+## Supplementary Data S4: NSCLC HLA Loss of Heterozygosity
 
-<a href="#tbl-supp-01" class="quarto-xref">Table 1</a> provides
-descriptions of the values contained in each column of Table S1.
+| Column Variable | Description                         |
+|-----------------|-------------------------------------|
+| accel_id        | CRUK Accelerator patient identifier |
+| message         | HLA LOH detection message           |
+| HLA_A_type1     | HLA allele type 1: A, B or C        |
+| HLA_A_type2     | HLA allele type 2: A, B or C        |
+| LossAllele      | HLA allele that was lost            |
+| KeptAllele      | HLA allele that was retained        |
 
-<table>
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 75%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Column name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>accel_id</code></td>
-<td>CRUK Accelerator patient identifier</td>
-</tr>
-<tr class="even">
-<td><code>target_lung_id</code></td>
-<td>Targeted Lung Health Check patient identifier</td>
-</tr>
-<tr class="odd">
-<td><code>tissue</code></td>
-<td>NSCLC type: Adenocarcinoma or Squamous cell carcinoma</td>
-</tr>
-<tr class="even">
-<td><code>n_somatic_variants</code></td>
-<td>Total number of somatic variants identified by whole exome
-sequencing</td>
-</tr>
-<tr class="odd">
-<td><code>mut_burden_per_mb</code></td>
-<td>Mutational burden: mutations per million bases of DNA.<br />
-Exome target size was 35.7 Mb</td>
-</tr>
-<tr class="even">
-<td><code>obs_class_I</code></td>
-<td>Number of observed HLA I peptides by mass spec.
-immunopeptidomics</td>
-</tr>
-<tr class="odd">
-<td><code>obs_class_II</code></td>
-<td>Number of observed HLA II peptides by mass spec.
-immunopeptidomics</td>
-</tr>
-<tr class="even">
-<td><code>HLA</code></td>
-<td>Class I and II HLA allotypes identified by genomic sequencing</td>
-</tr>
-<tr class="odd">
-<td><code>wet_weight</code></td>
-<td>Wet weight of tumour tissue</td>
-</tr>
-<tr class="even">
-<td><code>tumour_purity</code></td>
-<td>Tumour purity as calculated from WES by ASCAT</td>
-</tr>
-<tr class="odd">
-<td><code>tumour_ploidy</code></td>
-<td>Tumour ploidy as calculated from WES by ASCAT</td>
-</tr>
-<tr class="even">
-<td><code>til_status</code></td>
-<td>Tumour infiltrating T-cell status by immunohistochemistry: Low,
-Moderate, High or NA</td>
-</tr>
-<tr class="odd">
-<td><code>weeks_post_surgery</code></td>
-<td>Number of weeks since surgery</td>
-</tr>
-<tr class="even">
-<td><code>status_as_of_2021_01_19</code></td>
-<td>Status since 2021-01-19: Alive, Deceased or NA</td>
-</tr>
-<tr class="odd">
-<td><code>date_of_diagnosis</code></td>
-<td>Date of diagnosis</td>
-</tr>
-<tr class="even">
-<td><code>smoking_status</code></td>
-<td>Smoking status</td>
-</tr>
-<tr class="odd">
-<td><code>notes_2</code></td>
-<td>Notes about smoking history</td>
-</tr>
-</tbody>
-</table>
+## Supplementary Data S5: NSCLC Shared Protein Lists
 
-## Supplementary Material 2: NSCLC mutations
+| Column Variable | Description |
+|----|----|
+| hla_class | HLA class (I or II) |
+| intersection | Set intersection identifier |
+| n_proteins | Number of patients observations of protein in set intersection |
+| uniprot_id | UniProt protein identifier |
+| gene_name | HGNC gene name |
 
-Supplementary Material 2 is Table S2, a compressed `csv` file containing
-all the mutations (variant calls) from the WES comparing tumour to
-normal adjacent tissue. It has 106,285 rows with 16 columns comprising
-the variants from 24 donors. Variant types are single nucleotide
-variant, insertion, deletion and complex variant.
-<a href="#tbl-supp-02" class="quarto-xref">Table 2</a> contains the
-description of the column variables.
+## Supplementary Data S6: NSCLC pVACseq Class I Predictions
 
-| Column variable | Description |
-|-----------|-------------------------------------------------------------|
-| `accel_id` | CRUK Accelerator patient identifier |
-| `vid` | Unique variant identifier |
-| `chrom` | Chromosome |
-| `pos` | Genomic coordinate |
-| `ref` | Reference base |
-| `alt` | Variant base |
-| `info` | Information field from VCF file |
-| `format` | Format of VCF variable columns |
-| `sample_1` | Reference sample VCF variable values corresponding with format |
-| `sample_2` | Tumour sample VCF variable values corresponding with format |
-| `type` | Variant type: `snv`, `ins` , `del` or `complex` . Single nucleotide variant, insertion, deletion and complex variant respectively |
-| `ensembl` | Ensembl gene identifier |
-| `gene_name` | HGNC gene name |
-| `vaf` | Variant allele frequency |
-| `tissue` | Lung tumour tissue type: `Squamous` or `Adenocarcinoma` |
-| `cell_compartment` | Cell compartment of protein product of gene, |
+| Column Variable | Description |
+|-----------------------------------------|-------------------------------|
+| sample | CRUK Accelerator patient identifier |
+| chromosome | The chromosome of this variant |
+| start | The start position of this variant in the zero-based, half-open coordinate system |
+| stop | The stop position of this variant in the zero-based, half-open coordinate system |
+| reference | The reference allele |
+| variant | The alt allele |
+| transcript | The Ensembl ID of the affected transcript |
+| transcript_support_level | The transcript support level (TSL) of the affected transcript. `NA` if the VCF entry doesn't contain TSL information |
+| ensembl_gene_id | The Ensembl ID of the affected gene |
+| variant_type | The type of variant. `missense` for missense mutations, `inframe_ins` for inframe insertions, `inframe_del` for inframe deletions, and `FS` for frameshift variants |
+| mutation | The amino acid change of this mutation |
+| protein_position | The protein position of the mutation |
+| gene_name | The Ensembl gene name of the affected gene |
+| hgv_sc | The HGVS coding sequence variant name |
+| hgv_sp | The HGVS protein sequence variant name |
+| hla_allele | The HLA allele for this prediction |
+| peptide_length | The peptide length of the epitope |
+| sub_peptide_position | The one-based position of the epitope within the protein sequence used to make the prediction |
+| mutation_position | The one-based position of the start of the mutation within the epitope sequence. 0 if the start of the mutation is before the epitope |
+| mt_epitope_seq | The mutant epitope sequence |
+| wt_epitope_seq | The wildtype (reference) epitope sequence at the same position in the full protein sequence. `NA` if there is no wildtype sequence at this position or if more than half of the amino acids of the mutant epitope are mutated |
+| best_mt_score_method | Prediction algorithm with the lowest mutant ic50 binding affinity for this epitope |
+| best_mt_score | Lowest ic50 binding affinity of all prediction algorithms used |
+| corresponding_wt_score | ic50 binding affinity of the wildtype epitope. `NA` if there is no WT Epitope Seq |
+| corresponding_fold_change | Corresponding WT Score / Best MT Score. `NA` if there is no WT Epitope Seq |
+| tumor_dna_depth | Tumor DNA depth at this position. `NA` if VCF entry does not contain tumor DNA readcount annotation |
+| tumor_dna_vaf | Tumor DNA variant allele frequency (VAF) at this position. `NA` if VCF entry does not contain tumor DNA readcount annotation |
+| tumor_rna_depth | Tumor RNA depth at this position. `NA` if VCF entry does not contain tumor RNA readcount annotation |
+| tumor_rna_vaf | Tumor RNA variant allele frequency (VAF) at this position. `NA` if VCF entry does not contain tumor RNA readcount annotation |
+| normal_depth | Normal DNA depth at this position. `NA` if VCF entry does not contain normal DNA readcount annotation |
+| normal_vaf | Normal DNA variant allele frequency (VAF) at this position. `NA` if VCF entry does not contain normal DNA readcount annotation |
+| gene_expression | Gene expression value for the annotated gene containing the variant. `NA` if VCF entry does not contain gene expression annotation |
+| transcript_expression | Transcript expression value for the annotated transcript containing the variant. `NA` if VCF entry does not contain transcript expression annotation |
+| median_mt_score | Median ic50 binding affinity of the mutant epitope across all prediction algorithms used |
+| median_wt_score | Median ic50 binding affinity of the wildtype epitope across all prediction algorithms used. `NA` if there is no WT Epitope Seq |
+| median_fold_change | Median WT Score / Median MT Score. `NA` if there is no WT Epitope Seq |
+| mh_cflurry_wt_score | MHCflurry ic50 binding affinity for the wildtype epitope |
+| mh_cflurry_mt_score | MHCflurry ic50 binding affinity for the mutant epitope |
+| mh_cnuggets_i_wt_score | MHCnuggets-I ic50 binding affinity for the wildtype epitope |
+| mh_cnuggets_i_mt_score | MHCnuggets-I ic50 binding affinity for the mutant epitope |
+| net_mhc_wt_score | NetMHC ic50 binding affinity for the wildtype epitope |
+| net_mhc_mt_score | NetMHC ic50 binding affinity for the mutant epitope |
+| pick_pocket_wt_score | PickPocket ic50 binding affinity for the wildtype epitope |
+| pick_pocket_mt_score | PickPocket ic50 binding affinity for the mutant epitope |
+| cterm_7mer_gravy_score | Mean hydropathy of last 7 residues on the C-terminus of the peptide |
+| max_7mer_gravy_score | Max GRAVY score of any kmer in the amino acid sequence. Used to determine if there are any extremely hydrophobic regions within a longer amino acid sequence |
+| difficult_n_terminal_residue | Is N-terminal amino acid a Glutamine, Glutamic acid, or Cysteine? (T/F) |
+| c_terminal_cysteine | Is the C-terminal amino acid a Cysteine? (T/F) |
+| c_terminal_proline | Is the C-terminal amino acid a Proline? (T/F) |
+| cysteine_count | Number of Cysteines in the amino acid sequence. Problematic because they can form disulfide bonds across distant parts of the peptide |
+| n_terminal_asparagine | Is the N-terminal amino acid an Asparagine? (T/F) |
+| asparagine_proline_bond_count | Number of Asparagine-Proline bonds. Problematic because they can spontaneously cleave the peptide |
+| b_rank | Rank of binding score: 1/median neoantigen binding affinity. Lower is better |
+| f_rank | Rank of fold change: the difference in median binding affinity between neoantigen and wildtype peptide (agretopicity). Higher is better |
+| m_rank | Ranks of mutant allele expression: the product of gene_expression and tumor_rna_vaf. Higher is better |
+| d_rank | Rank of the tumor_dna_vaf. Higher is better |
+| score | A score is calculated from the above ranks with the following formula: b_rank + f_rank + (m_rank * 2) + (d_rank/2). Higher is better |
+| rank_score | The score converted to a rank, with the best being 1, splitting ties by first. Lower is better |
+| rank_percent | The percentage rank score. Lower is better |
 
-## Supplementary Material 3 and 4: pVACseq predicted neoantigens
+## Supplementary Data S7: NSCLC pVACseq Class II Predictions
 
-Supplementary Material 3 and 4 are Tables S3 and S4. These are `csv`
-files containing all the pVACseq \[[2](#ref-hundal2016)\] predicted
-neoantigen peptides and their wildtype equivalents,
-<a href="#tbl-supp-03-04" class="quarto-xref">Table 3</a> contains
-descriptions of the values contained in each column. Each row in Tables
-S3 and S4 represents one set of predictions i.e. one mutation and
-predicted neoantigen peptide per row.
+| Column Variable | Description |
+|-----------------------------------------|-------------------------------|
+| sample | CRUK Accelerator patient identifier |
+| chromosome | The chromosome of this variant |
+| start | The start position of this variant in the zero-based, half-open coordinate system |
+| stop | The stop position of this variant in the zero-based, half-open coordinate system |
+| reference | The reference allele |
+| variant | The alt allele |
+| transcript | The Ensembl ID of the affected transcript |
+| transcript_support_level | The transcript support level (TSL) of the affected transcript. `NA` if the VCF entry doesn't contain TSL information |
+| ensembl_gene_id | The Ensembl ID of the affected gene |
+| variant_type | The type of variant. `missense` for missense mutations, `inframe_ins` for inframe insertions, `inframe_del` for inframe deletions, and `FS` for frameshift variants |
+| mutation | The amino acid change of this mutation |
+| protein_position | The protein position of the mutation |
+| gene_name | The Ensembl gene name of the affected gene |
+| hgv_sc | The HGVS coding sequence variant name |
+| hgv_sp | The HGVS protein sequence variant name |
+| hla_allele | The HLA allele for this prediction |
+| peptide_length | The peptide length of the epitope |
+| sub_peptide_position | The one-based position of the epitope within the protein sequence used to make the prediction |
+| mutation_position | The one-based position of the start of the mutation within the epitope sequence. 0 if the start of the mutation is before the epitope |
+| mt_epitope_seq | The mutant epitope sequence |
+| wt_epitope_seq | The wildtype (reference) epitope sequence at the same position in the full protein sequence. `NA` if there is no wildtype sequence at this position or if more than half of the amino acids of the mutant epitope are mutated |
+| best_mt_score_method | Prediction algorithm with the lowest mutant ic50 binding affinity for this epitope |
+| best_mt_score | Lowest ic50 binding affinity of all prediction algorithms used |
+| corresponding_wt_score | ic50 binding affinity of the wildtype epitope. `NA` if there is no WT Epitope Seq |
+| corresponding_fold_change | Corresponding WT Score / Best MT Score. `NA` if there is no WT Epitope Seq |
+| tumor_dna_depth | Tumor DNA depth at this position. `NA` if VCF entry does not contain tumor DNA readcount annotation |
+| tumor_dna_vaf | Tumor DNA variant allele frequency (VAF) at this position. `NA` if VCF entry does not contain tumor DNA readcount annotation |
+| tumor_rna_depth | Tumor RNA depth at this position. `NA` if VCF entry does not contain tumor RNA readcount annotation |
+| tumor_rna_vaf | Tumor RNA variant allele frequency (VAF) at this position. `NA` if VCF entry does not contain tumor RNA readcount annotation |
+| normal_depth | Normal DNA depth at this position. `NA` if VCF entry does not contain normal DNA readcount annotation |
+| normal_vaf | Normal DNA variant allele frequency (VAF) at this position. `NA` if VCF entry does not contain normal DNA readcount annotation |
+| gene_expression | Gene expression value for the annotated gene containing the variant. `NA` if VCF entry does not contain gene expression annotation |
+| transcript_expression | Transcript expression value for the annotated transcript containing the variant. `NA` if VCF entry does not contain transcript expression annotation |
+| median_mt_score | Median ic50 binding affinity of the mutant epitope across all prediction algorithms used |
+| median_wt_score | Median ic50 binding affinity of the wildtype epitope across all prediction algorithms used. `NA` if there is no WT Epitope Seq |
+| median_fold_change | Median WT Score / Median MT Score. `NA` if there is no WT Epitope Seq |
+| mh_cnuggets_ii_wt_score | MHCnuggets-II ic50 binding affinity for the wildtype epitope |
+| mh_cnuggets_ii_mt_score | MHCnuggets-II ic50 binding affinity for the mutant epitope |
+| cterm_7mer_gravy_score | Mean hydropathy of last 7 residues on the C-terminus of the peptide |
+| max_7mer_gravy_score | Max GRAVY score of any kmer in the amino acid sequence. Used to determine if there are any extremely hydrophobic regions within a longer amino acid sequence |
+| difficult_n_terminal_residue | Is N-terminal amino acid a Glutamine, Glutamic acid, or Cysteine? (T/F) |
+| c_terminal_cysteine | Is the C-terminal amino acid a Cysteine? (T/F) |
+| c_terminal_proline | Is the C-terminal amino acid a Proline? (T/F) |
+| cysteine_count | Number of Cysteines in the amino acid sequence. Problematic because they can form disulfide bonds across distant parts of the peptide |
+| n_terminal_asparagine | Is the N-terminal amino acid an Asparagine? (T/F) |
+| asparagine_proline_bond_count | Number of Asparagine-Proline bonds. Problematic because they can spontaneously cleave the peptide |
+| net_mhci_ipan_wt_score | NetMHCIIpan ic50 binding affinity for the wildtype epitope |
+| net_mhci_ipan_mt_score | NetMHCIIpan ic50 binding affinity for the mutant epitope |
+| n_nalign_wt_score | NNalign ic50 binding affinity for the wildtype epitope |
+| n_nalign_mt_score | NNalign ic50 binding affinity for the mutant epitope |
+| sm_malign_wt_score | SMMalign ic50 binding affinity for the wildtype epitope |
+| sm_malign_mt_score | SMMalign ic50 binding affinity for the mutant epitope |
+| b_rank | Rank of binding score: 1/median neoantigen binding affinity. Lower is better |
+| f_rank | Rank of fold change: the difference in median binding affinity between neoantigen and wildtype peptide (agretopicity). Higher is better |
+| m_rank | Ranks of mutant allele expression: the product of gene_expression and tumor_rna_vaf. Higher is better |
+| d_rank | Rank of the tumor_dna_vaf. Higher is better |
+| score | A score is calculated from the above ranks with the following formula: b_rank + f_rank + (m_rank * 2) + (d_rank/2). Higher is better |
+| rank_score | The score converted to a rank, with the best being 1, splitting ties by first. Lower is better |
+| rank_percent | The percentage rank score. Lower is better |
 
-Table S3 has 27,446 rows and 59 columns. Table S4 has 127,015 rows and
-59 columns.
+## Supplementary Data S8: NSCLC pVACseq Peptidome Combined Predictions
 
-<table>
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 77%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Column Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>sample</code></td>
-<td>CRUK Accelerator patient identifier</td>
-</tr>
-<tr class="even">
-<td><code>Chromosome</code></td>
-<td>The chromosome of this variant</td>
-</tr>
-<tr class="odd">
-<td><code>Start</code></td>
-<td>The start position of this variant in the zero-based, half-open
-coordinate system</td>
-</tr>
-<tr class="even">
-<td><code>Stop</code></td>
-<td>The stop position of this variant in the zero-based, half-open
-coordinate system</td>
-</tr>
-<tr class="odd">
-<td><code>Reference</code></td>
-<td>The reference allele</td>
-</tr>
-<tr class="even">
-<td><code>Variant</code></td>
-<td>The alt allele</td>
-</tr>
-<tr class="odd">
-<td><code>Transcript</code></td>
-<td>The Ensembl ID of the affected transcript</td>
-</tr>
-<tr class="even">
-<td><code>Transcript Support Level</code></td>
-<td>The <a
-href="https://useast.ensembl.org/info/genome/genebuild/transcript_quality_tags.html#tsl">transcript
-support level (TSL)</a> of the affected transcript. <code>NA</code> if
-the VCF entry doesn’t contain TSL information.</td>
-</tr>
-<tr class="odd">
-<td><code>Ensembl Gene ID</code></td>
-<td>The Ensembl ID of the affected gene</td>
-</tr>
-<tr class="even">
-<td><code>Variant Type</code></td>
-<td>The type of variant. <code>missense</code> for missense mutations,
-<code>inframe_ins</code> for inframe insertions,
-<code>inframe_del</code> for inframe deletions, and <code>FS</code> for
-frameshift variants</td>
-</tr>
-<tr class="odd">
-<td><code>Mutation</code></td>
-<td>The amnio acid change of this mutation</td>
-</tr>
-<tr class="even">
-<td><code>Protein Position</code></td>
-<td>The protein position of the mutation</td>
-</tr>
-<tr class="odd">
-<td><code>Gene Name</code></td>
-<td>The Ensembl gene name of the affected gene</td>
-</tr>
-<tr class="even">
-<td><code>HGVSc</code></td>
-<td>The HGVS coding sequence variant name</td>
-</tr>
-<tr class="odd">
-<td><code>HGVSp</code></td>
-<td>The HGVS protein sequence variant name</td>
-</tr>
-<tr class="even">
-<td><code>HLA Allele</code></td>
-<td>The HLA allele for this prediction</td>
-</tr>
-<tr class="odd">
-<td><code>Peptide Length</code></td>
-<td>The peptide length of the epitope</td>
-</tr>
-<tr class="even">
-<td><code>Sub-peptide Position</code></td>
-<td>The one-based position of the epitope within the protein sequence
-used to make the prediction</td>
-</tr>
-<tr class="odd">
-<td><code>Mutation Position</code></td>
-<td>The one-based position of the start of the mutation within the
-epitope sequence. <code>0</code> if the start of the mutation is before
-the epitope</td>
-</tr>
-<tr class="even">
-<td><code>MT Epitope Seq</code></td>
-<td>The mutant epitope sequence</td>
-</tr>
-<tr class="odd">
-<td><code>WT Epitope Seq</code></td>
-<td>The wildtype (reference) epitope sequence at the same position in
-the full protein sequence. <code>NA</code> if there is no wildtype
-sequence at this position or if more than half of the amino acids of the
-mutant epitope are mutated</td>
-</tr>
-<tr class="even">
-<td><code>Best MT Score Method</code></td>
-<td>Prediction algorithm with the lowest mutant ic50 binding affinity
-for this epitope</td>
-</tr>
-<tr class="odd">
-<td><code>Best MT Score</code></td>
-<td>Lowest ic50 binding affinity of all prediction algorithms used</td>
-</tr>
-<tr class="even">
-<td><code>Corresponding WT Score</code></td>
-<td>ic50 binding affinity of the wildtype epitope. <code>NA</code> if
-there is no <code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="odd">
-<td><code>Corresponding Fold Change</code></td>
-<td><code>Corresponding WT Score</code> / <code>Best MT Score</code>.
-<code>NA</code> if there is no <code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="even">
-<td><code>Best MT Percentile Method</code></td>
-<td>Prediction algorithm with the lowest binding affinity percentile
-rank for this epitope</td>
-</tr>
-<tr class="odd">
-<td><code>Best MT Percentile</code></td>
-<td>Lowest percentile rank of this epitope’s ic50 binding affinity of
-all prediction algorithms used (those that provide percentile
-output)</td>
-</tr>
-<tr class="even">
-<td><code>Corresponding WT Percentile</code></td>
-<td>binding affinity percentile rank of the wildtype epitope.
-<code>NA</code> if there is no <code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="odd">
-<td><code>Tumor DNA Depth</code></td>
-<td>Tumor DNA depth at this position. <code>NA</code> if VCF entry does
-not contain tumor DNA readcount annotation.</td>
-</tr>
-<tr class="even">
-<td><code>Tumor DNA VAF</code></td>
-<td>Tumor DNA variant allele frequency (VAF) at this position.
-<code>NA</code> if VCF entry does not contain tumor DNA readcount
-annotation.</td>
-</tr>
-<tr class="odd">
-<td><code>Tumor RNA Depth</code></td>
-<td>Tumor RNA depth at this position. <code>NA</code> if VCF entry does
-not contain tumor RNA readcount annotation.</td>
-</tr>
-<tr class="even">
-<td><code>Tumor RNA VAF</code></td>
-<td>Tumor RNA variant allele frequency (VAF) at this position.
-<code>NA</code> if VCF entry does not contain tumor RNA readcount
-annotation.</td>
-</tr>
-<tr class="odd">
-<td><code>Normal Depth</code></td>
-<td>Normal DNA depth at this position. <code>NA</code> if VCF entry does
-not contain normal DNA readcount annotation.</td>
-</tr>
-<tr class="even">
-<td><code>Normal VAF</code></td>
-<td>Normal DNA variant allele frequency (VAF) at this position.
-<code>NA</code> if VCF entry does not contain normal DNA readcount
-annotation.</td>
-</tr>
-<tr class="odd">
-<td><code>Gene Expression</code></td>
-<td>Gene expression value for the annotated gene containing the variant.
-<code>NA</code> if VCF entry does not contain gene expression
-annotation.</td>
-</tr>
-<tr class="even">
-<td><code>Transcript Expression</code></td>
-<td>Transcript expression value for the annotated transcript containing
-the variant. <code>NA</code> if VCF entry does not contain transcript
-expression annotation.</td>
-</tr>
-<tr class="odd">
-<td><code>Median MT Score</code></td>
-<td>Median ic50 binding affinity of the mutant epitope across all
-prediction algorithms used</td>
-</tr>
-<tr class="even">
-<td><code>Median WT Score</code></td>
-<td>Median ic50 binding affinity of the wildtype epitope across all
-prediction algorithms used. <code>NA</code> if there is no
-<code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="odd">
-<td><code>Median Fold Change</code></td>
-<td><code>Median WT Score</code> / <code>Median MT Score</code>.
-<code>NA</code> if there is no <code>WT Epitope Seq</code>.</td>
-</tr>
-<tr class="even">
-<td><code>Individual Prediction Algorithm WT and MT Scores</code>
-(multiple)</td>
-<td><p>ic50 binding affintity for the <code>MT Epitope Seq</code> and
-<code>WT Eptiope Seq</code> for the individual prediction algorithms
-used.</p>
-<p>Four binding algorithms were used for class I predictions (MHCflurry,
-MHCnuggetsI, NNalign, NetMHC, PickPocket) and four for class II
-predictions (MHCnuggetsII, NetMHCIIpan, NNalign, SMMalign).</p></td>
-</tr>
-<tr class="odd">
-<td><code>cterm_7mer_gravy_score</code></td>
-<td>Mean hydropathy of last 7 residues on the C-terminus of the
-peptide</td>
-</tr>
-<tr class="even">
-<td><code>max_7mer_gravy_score</code></td>
-<td>Max GRAVY score of any kmer in the amino acid sequence. Used to
-determine if there are any extremely hydrophobic regions within a longer
-amino acid sequence.</td>
-</tr>
-<tr class="odd">
-<td><code>difficult_n_terminal_residue</code> (T/F)</td>
-<td>Is N-terminal amino acid a Glutamine, Glutamic acid, or
-Cysteine?</td>
-</tr>
-<tr class="even">
-<td><code>c_terminal_cysteine</code> (T/F)</td>
-<td>Is the C-terminal amino acid a Cysteine?</td>
-</tr>
-<tr class="odd">
-<td><code>c_terminal_proline</code> (T/F)</td>
-<td>Is the C-terminal amino acid a Proline?</td>
-</tr>
-<tr class="even">
-<td><code>cysteine_count</code></td>
-<td>Number of Cysteines in the amino acid sequence. Problematic because
-they can form disulfide bonds across distant parts of the peptide</td>
-</tr>
-<tr class="odd">
-<td><code>n_terminal_asparagine</code> (T/F)</td>
-<td>Is the N-terminal amino acid an Asparagine?</td>
-</tr>
-<tr class="even">
-<td><code>asparagine_proline_bond_count</code></td>
-<td>Number of Asparagine-Proline bonds. Problematic because they can
-spontaneously cleave the peptide</td>
-</tr>
-<tr class="odd">
-<td><code>b_rank</code></td>
-<td>Rank of binding score: 1/median neoantigen binding affinity . Lower
-is better</td>
-</tr>
-<tr class="even">
-<td><code>f_rank</code></td>
-<td>Rank of fold change: the difference in median binding affinity
-between neoantigen and wildtype peptide (agretopicity). Higher is
-better.</td>
-</tr>
-<tr class="odd">
-<td><code>m_rank</code></td>
-<td>Ranks of mutant allele expression: the product of
-<code>gene_expression</code> and <code>tumor_rna_vaf</code> . Higher is
-better.</td>
-</tr>
-<tr class="even">
-<td><code>d_rank</code></td>
-<td>Rank of the <code>tumor_dna_vaf</code> . Higher is better.</td>
-</tr>
-<tr class="odd">
-<td><code>score</code></td>
-<td>A <code>score</code> is calculated from the above ranks with the
-following formula:
-<code>b_rank + f_rank + (m_rank * 2) + (d_rank/2)</code> . Higher is
-better</td>
-</tr>
-<tr class="even">
-<td><code>rank_score</code></td>
-<td>The <code>score</code> converted to a rank, with the best being 1,
-splitting ties by first. Lower is better</td>
-</tr>
-<tr class="odd">
-<td><code>rank_percent</code></td>
-<td>The percentage rank score. Lower is better.</td>
-</tr>
-</tbody>
-</table>
+| Column Variable | Description |
+|-----------------------------------------|-------------------------------|
+| sample_id | CRUK Accelerator patient identifier |
+| hla_class | HLA class (I or II) |
+| table_name | Identifier in the form `accel_id`/`predicted_hla_allotype`/`peptide_length` |
+| length | Peptide length |
+| hla_length_pref1 | HLA allotype preferred peptide length 1 |
+| hla_length_pref2 | HLA allotype preferred peptide length 2 |
+| gene_name | HGNC gene name |
+| mt_epitope_seq | The mutant epitope sequence |
+| median_mt_score | Median ic50 binding affinity of the mutant epitope across all prediction algorithms used |
+| corresponding_fold_change | `Corresponding WT Score` / `Best MT Score`. `NA` if there is no `WT Epitope Seq` |
+| gene_expression | Gene expression value for the annotated gene containing the variant |
+| tumor_rna_vaf | Tumor RNA variant allele frequency (VAF) at this position |
+| tumor_dna_vaf | Tumor DNA variant allele frequency (VAF) at this position |
+| rank_percent | The percentage rank score. Lower is better |
+| rank_score | The `score` converted to a rank, with the best being 1, splitting ties by first. Lower is better |
+| Obs_I | The number of peptides from the source protein observed by mass spectrometry in HLA-I immunopeptidome |
+| Obs_II | The number of peptides from the source protein observed by mass spectrometry in HLA-II immunopeptidome |
 
-## Supplementary Material 5: Tested neoantigens
+## Supplementary Data S9: NSCLC Tested Neoantigens
 
-Supplementary Material 5 is Table S5, a `csv` file with 70 rows and 17
-column variables for the neoantigen peptide predictions tested by IFN-𝛄
-ELISPOT using autologous PBMCs. Each row in Table S4 represents one
-neoantigen peptide and its wildtype equivalent and
-<a href="#tbl-supp-05" class="quarto-xref">Table 4</a> contains
-descriptions of the values contained in each column of Table S5.
-
-|  |  |
-|-------------|-----------------------------------------------------------|
-| **Column name** | **Description** |
-| `accel_id` | CRUK Accelerator patient identifier |
-| `gene_name` | Gene |
-| `mt_epitope_seq` | Mutated (neoantigen) peptide sequeunce |
-| `wt_epitope_seq` | Wildtype peptide sequence |
-| `peptide_length` | Peptide length |
-| `table_name` | Identifier in the form `accel_id` / `predicted_hla_allotype` / `peptide_length` e.g. `A119/DRB1*04:04/15` |
-| `mutation` | The mutation `From/To` |
-| `protein_position` | Location of the mutation in the source protein, UNIPROT sequence number. |
-| `Obs_I` | The number of peptides from the source protein observed by mass spectrometry observed in HLA-I immunopeptidome |
-| `Obs_II` | The number of peptides from the source protein observed by mass spectrometry observed in HLA-II immunopeptidome |
-| `median_mt_score` | The median pVACseq predicted binding affinity of the neoantigen peptide |
-| `median_wt_score` | The median pVACseq predicted binding affinity of the wildtype peptide |
-| `median_fold_change` | The ratio between the median neoantigen affinity and wildtype peptide affinity |
-| `rank_percent` | The overall rank percentage for the neoantigen from pVACseq for the peptide of that length and HLA allotype. |
-| `mean_sfc_mt` | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the neoantigen peptide |
-| `mean_sfc_wt` | Mean IFN-𝛄 ELISPOT spot forming cells per million cells for the wildtype peptide |
-| `elispot_response` | ELISPOT response category: Strong, Weak or None |
-
-## Table S6 List of patient samples selected for single-cell RNA and TCR sequencing and TotalSeq C antibodies (Biolegend)
-
-|                              |                           |                     |
-|---------------------------|-------------------------|--------------------|
-| **Patient ID and condition** | **TotalSeq C Hashtag ID** | **Hashtag barcode** |
-| A119_PTPRT-12\_**MUT**       | C0255                     | AAGTATCGTTTCGCA     |
-| A119_PTPRT-12\_**WT**        | C0256                     | GGTTGCCAGATGTCA     |
+| Column Variable | Description |
+|-----------------------------------------|-------------------------------|
+| accel_id | CRUK Accelerator patient identifier |
+| gene_name | Gene |
+| mt_epitope_seq | Mutated (neoantigen) peptide sequence |
+| wt_epitope_seq | Wildtype peptide sequence |
+| peptide_length | Peptide length |
+| table_name | Identifier in the form `accel_id`/`predicted_hla_allotype`/`peptide_length` e.g. `A119/DRB1*04:04/15` |
+| mutation | The mutation `From/To` |
+| protein_position | Location of the mutation in the source protein, UNIPROT sequence number |
+| Obs_I | The number of peptides from the source protein observed by mass spectrometry in HLA-I immunopeptidome |
+| Obs_II | The number of peptides from the source protein observed by mass spectrometry in HLA-II immunopeptidome |
+| median_mt_score | The median pVACseq predicted binding affinity of the neoantigen peptide |
+| median_wt_score | The median pVACseq predicted binding affinity of the wildtype peptide |
+| median_fold_change | The ratio between the median neoantigen affinity and wildtype peptide affinity |
+| rank_percent | The overall rank percentage for the neoantigen from pVACseq for the peptide of that length and HLA allotype |
+| mean_sfc_mt | Mean IFN-γ ELISPOT spot forming cells per million cells for the neoantigen peptide |
+| mean_sfc_wt | Mean IFN-γ ELISPOT spot forming cells per million cells for the wildtype peptide |
+| elispot_response | ELISPOT response category: Strong, Weak or None |
 
 ## References
 
